@@ -1,0 +1,31 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.overenchanted.free_riding"
+  },
+  "effects": {
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": 0.0
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#overenchanted:exclusive_set/free_riding_exclusive",
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 75
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 7
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#overenchanted:enchantable/free_riding",
+  "weight": 1
+}

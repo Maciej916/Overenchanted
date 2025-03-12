@@ -1,0 +1,34 @@
+{
+  "enchantment.overenchanted.blazing_edge": "Blazing Edge",
+  "enchantment.overenchanted.blazing_edge.desc": "Grants a chance to ignite nearby enemies on hit.",
+
+  "enchantment.overenchanted.blazing_walker": "Blazing Walker",
+  "enchantment.overenchanted.blazing_walker.desc": "Enables you to walk safely on lava.",
+
+  "enchantment.overenchanted.breaking_curse": "Curse Of Breaking",
+  "enchantment.overenchanted.breaking_curse.desc": "Causes the item to break faster with use.",
+
+  "enchantment.overenchanted.detonation": "Detonation",
+  "enchantment.overenchanted.detonation.desc": "Creates a small explosion when hitting a mob.",
+
+  "enchantment.overenchanted.enraged": "Enraged",
+  "enchantment.overenchanted.enraged.desc": "Increases attack damage by +30% and reduces armor by -20% per level.",
+
+  "enchantment.overenchanted.eternal": "Eternal",
+  "enchantment.overenchanted.eternal.desc": "Prevents the item from despawning.",
+
+  "enchantment.overenchanted.floating": "Floating",
+  "enchantment.overenchanted.floating.desc": " Causes the enemy to float for a short period of time.",
+
+  "enchantment.overenchanted.free_riding": "Free Riding",
+  "enchantment.overenchanted.free_riding.desc": "Prevents durability from decreasing while boosting speed on a pig or strider.",
+
+  "enchantment.overenchanted.ignorance_curse": "Curse Of Ignorance",
+  "enchantment.overenchanted.ignorance_curse.desc": "Mobs and mined blocks will not drop experience.",
+
+  "enchantment.overenchanted.paralysis": "Paralysis",
+  "enchantment.overenchanted.paralysis.desc": "Applies paralysis to a mob, preventing it from moving, jumping, or attacking for a short period of time.",
+
+  "enchantment.overenchanted.reinforced_tip": "Reinforced Tip",
+  "enchantment.overenchanted.reinforced_tip.desc": "Increases the speed of breaking harder materials."
+}

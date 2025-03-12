@@ -1,0 +1,21 @@
+{
+  "values": [
+    "#c:obsidians",
+    "minecraft:ancient_debris",
+    "minecraft:netherite_block",
+    "minecraft:enchanting_table",
+    "minecraft:respawn_anchor",
+    "minecraft:respawn_anchor",
+    "#c:bookshelves",
+    "minecraft:beehive",
+    "minecraft:bee_nest",
+    "minecraft:chiseled_bookshelf",
+    "minecraft:clay",
+    "minecraft:mud",
+    "minecraft:rooted_dirt",
+    "minecraft:podzol",
+    "minecraft:nether_wart_block",
+    "minecraft:warped_wart_block",
+    "minecraft:hay_block"
+  ]
+}

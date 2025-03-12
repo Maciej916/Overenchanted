@@ -1,5 +1,9 @@
 package com.maciej916.overenchanted;
 
+import com.maciej916.overenchanted.attribute.ModAttributes;
+import com.maciej916.overenchanted.block.ModBlocks;
+import com.maciej916.overenchanted.enchantment.ModEnchantmentEffects;
+import com.maciej916.overenchanted.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -17,7 +21,6 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(Overenchanted.MOD_ID)
 public class Overenchanted {
     public static final String MOD_ID = "overenchanted";
@@ -31,6 +34,12 @@ public class Overenchanted {
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        ModAttributes.register(modEventBus);
+        ModEnchantmentEffects.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
