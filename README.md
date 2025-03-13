@@ -1,25 +1,16 @@
+<div align="center">
+  <img src="https://media.forgecdn.net/attachments/description/1218733/description_e9bce1e8-422a-480d-b8f1-8db36ab12935.png">
+</div>
 
-Installation information
-=======
+# Overenchanted [![](http://cf.way2muchnoise.eu/1218733.svg) ![](http://cf.way2muchnoise.eu/versions/1218733.svg)](https://curseforge.com/minecraft/mc-mods/overenchanted)
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Enchantments that goes beyond vanilla.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## Links and Downloads
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/overenchanted) (downloads and more information)
+- [Modrinth](https://modrinth.com/mod/ma-overenchanted) (downloads and more information)
+- [GitHub repository](https://github.com/Maciej916/Overenchanted) (source code)
+- [Issue Tracker on GitHub](https://github.com/Maciej916/Overenchanted/issues) (bug reports and feature requests)
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Installation
+Put mod in **/mods** directory for both **client and server** side in order to mod work property.
