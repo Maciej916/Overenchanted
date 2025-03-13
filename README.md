@@ -7,7 +7,7 @@
 Enchantments that goes beyond vanilla.
 
 ## Links and Downloads
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/maessentials) (downloads and more information)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/overenchanted) (downloads and more information)
 - [Modrinth](https://modrinth.com/mod/ma-overenchanted) (downloads and more information)
 - [GitHub repository](https://github.com/Maciej916/Overenchanted) (source code)
 - [Issue Tracker on GitHub](https://github.com/Maciej916/Overenchanted/issues) (bug reports and feature requests)
