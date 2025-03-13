@@ -15,13 +15,18 @@ public class ModEnchantments {
 
     public static final ResourceKey<Enchantment> FREE_RIDING = create("free_riding");
 
+
     public static final ResourceKey<Enchantment> FLOATING = create("floating");
-    public static final ResourceKey<Enchantment> DETONATION = create("detonation");
+    public static final ResourceKey<Enchantment> EXPLOSIVE_SHOT = create("explosive_shot");
     public static final ResourceKey<Enchantment> PARALYSIS = create("paralysis");
     public static final ResourceKey<Enchantment> QUICK_DRAW = create("quick_draw");
 
     public static final ResourceKey<Enchantment> ENRAGED = create("enraged");
     public static final ResourceKey<Enchantment> BLAZING_WALKER = create("blazing_walker");
+    public static final ResourceKey<Enchantment> FLEETFOOT = create("fleetfoot");
+    public static final ResourceKey<Enchantment> HIGH_STEP = create("high_step");
+    public static final ResourceKey<Enchantment> AQUA_GLIDE = create("aqua_glide");
+    public static final ResourceKey<Enchantment> AQUA_MINER = create("aqua_miner");
 
     public static final ResourceKey<Enchantment> ETERNAL = create("eternal");
 
@@ -43,15 +48,20 @@ public class ModEnchantments {
         register(context, FREE_RIDING, FreeRidingEnchantment.builder(context));
 
         register(context, FLOATING, FloatingEnchantment.builder(context));
-        register(context, DETONATION, DetonationEnchantment.builder(context));
+
+        register(context, EXPLOSIVE_SHOT, ExplosiveShotEnchantment.builder(context));
         register(context, PARALYSIS, ParalysisEnchantment.builder(context));
 //        register(context, QUICK_DRAW, QuickDrawEnchantment.builder(context));
 
         register(context, ENRAGED, EnragedEnchantment.builder(context));
         register(context, BLAZING_WALKER, BlazingWalkerEnchantment.builder(context));
+        register(context, FLEETFOOT, FleetfootEnchantment.builder(context));
+        register(context, HIGH_STEP, HighStepEnchantment.builder(context));
+        register(context, AQUA_GLIDE, AquaGlideEnchantment.builder(context));
+        register(context, AQUA_MINER, AquaMinerEnchantment.builder(context));
 
         register(context, BREAKING_CURSE, BreakingEnchantment.builder(context));
-//        register(context, CURSE_OF_INEFFICIENCY, InefficiencyEnchantment.builder(context));
+        register(context, INEFFICIENCY_CURSE, InefficiencyEnchantment.builder(context));
         register(context, IGNORANCE_CURSE, IgnoranceEnchantment.builder(context));
 
         register(context, ETERNAL, EternalEnchantment.builder(context));

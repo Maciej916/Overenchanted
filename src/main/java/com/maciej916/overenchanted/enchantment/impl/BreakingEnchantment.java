@@ -1,6 +1,7 @@
 package com.maciej916.overenchanted.enchantment.impl;
 
 import com.maciej916.overenchanted.enchantment.effect.IncreaseDamageEffect;
+import com.maciej916.overenchanted.util.EnchantmentRarity;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -20,7 +21,7 @@ public class BreakingEnchantment {
         return Enchantment.enchantment(
                         Enchantment.definition(
                                 items.getOrThrow(ItemTags.DURABILITY_ENCHANTABLE),
-                                5,
+                                EnchantmentRarity.UNCOMMON.weight(),
                                 3,
                                 Enchantment.dynamicCost(5, 8),
                                 Enchantment.dynamicCost(55, 8),

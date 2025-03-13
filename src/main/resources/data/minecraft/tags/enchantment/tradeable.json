@@ -6,10 +6,15 @@
         "overenchanted:reinforced_tip",
         "overenchanted:free_riding",
         "overenchanted:floating",
-        "overenchanted:detonation",
+        "overenchanted:explosive_shot",
         "overenchanted:paralysis",
         "overenchanted:enraged",
         "overenchanted:blazing_walker",
-        "overenchanted:eternal"
+        "overenchanted:eternal",
+        "overenchanted:fleetfoot",
+        "overenchanted:inefficiency_curse",
+        "overenchanted:high_step",
+        "overenchanted:aqua_glide",
+        "overenchanted:aqua_miner"
     ]
 }

@@ -23,14 +23,14 @@ public class EnragedEnchantment {
 
         return Enchantment.enchantment(
                         Enchantment.definition(
-                                items.getOrThrow(ModTags.Items.ENRAGED_ITEMS),
+                                items.getOrThrow(ModTags.Items.ENRAGED_ENCHANTABLE),
                                 items.getOrThrow(ItemTags.CHEST_ARMOR_ENCHANTABLE),
                                 EnchantmentRarity.VERY_RARE.weight(),
                                 3,
                                 Enchantment.dynamicCost(1, 8),
                                 Enchantment.dynamicCost(21, 8),
                                 2,
-                                EquipmentSlotGroup.HAND
+                                EquipmentSlotGroup.CHEST
                         )
                 )
                 .withEffect(

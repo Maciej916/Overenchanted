@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "overenchanted:breaking_curse",
-    "overenchanted:ignorance_curse"
+    "overenchanted:ignorance_curse",
+    "overenchanted:inefficiency_curse"
   ]
 }

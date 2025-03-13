@@ -14,28 +14,28 @@ import net.minecraft.world.item.enchantment.EnchantmentEffectComponents;
 import net.minecraft.world.item.enchantment.LevelBasedValue;
 import net.minecraft.world.item.enchantment.effects.EnchantmentAttributeEffect;
 
-public class InefficiencyEnchantment {
+public class HighStepEnchantment {
 
     public static Enchantment.Builder builder(BootstrapContext<Enchantment> context) {
         var items = context.lookup(Registries.ITEM);
 
         return Enchantment.enchantment(
                         Enchantment.definition(
-                                items.getOrThrow(ItemTags.MINING_ENCHANTABLE),
-                                EnchantmentRarity.RARE.weight(),
-                                5,
-                                Enchantment.dynamicCost(1, 10),
-                                Enchantment.dynamicCost(51, 10),
+                                items.getOrThrow(ItemTags.FOOT_ARMOR_ENCHANTABLE),
+                                EnchantmentRarity.UNCOMMON.weight(),
                                 2,
-                                EquipmentSlotGroup.MAINHAND
+                                Enchantment.dynamicCost(1, 8),
+                                Enchantment.dynamicCost(20, 8),
+                                2,
+                                EquipmentSlotGroup.FEET
                         )
                 )
                 .withEffect(
                         EnchantmentEffectComponents.ATTRIBUTES,
                         new EnchantmentAttributeEffect(
-                                ResourceLocation.fromNamespaceAndPath(Overenchanted.MOD_ID, "enchantment.inefficiency_mining_efficiency"),
-                                Attributes.MINING_EFFICIENCY,
-                                LevelBasedValue.perLevel(-6f),
+                                ResourceLocation.fromNamespaceAndPath(Overenchanted.MOD_ID, "enchantment.high_step_step_height"),
+                                Attributes.STEP_HEIGHT,
+                                LevelBasedValue.perLevel(0.5f),
                                 AttributeModifier.Operation.ADD_VALUE
                         )
                 );

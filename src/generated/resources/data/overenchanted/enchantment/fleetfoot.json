@@ -1,18 +1,18 @@
 {
   "anvil_cost": 2,
   "description": {
-    "translate": "enchantment.overenchanted.enraged"
+    "translate": "enchantment.overenchanted.fleetfoot"
   },
   "effects": {
     "minecraft:attributes": [
       {
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.3,
-          "per_level_above_first": 0.3
+          "base": 0.15,
+          "per_level_above_first": 0.15
         },
-        "attribute": "minecraft:attack_damage",
-        "id": "overenchanted:enchantment.enraged_attack_damage",
+        "attribute": "minecraft:movement_speed",
+        "id": "overenchanted:enchantment.fleetfoot_movement_speed",
         "operation": "add_multiplied_total"
       },
       {
@@ -21,25 +21,25 @@
           "base": -0.2,
           "per_level_above_first": -0.2
         },
-        "attribute": "minecraft:armor",
-        "id": "overenchanted:enchantment.enraged_attack_armor",
+        "attribute": "minecraft:knockback_resistance",
+        "id": "overenchanted:enchantment.fleetfoot_knockback_resistance",
         "operation": "add_multiplied_total"
       }
     ]
   },
   "max_cost": {
-    "base": 21,
+    "base": 24,
     "per_level_above_first": 8
   },
   "max_level": 3,
   "min_cost": {
-    "base": 1,
+    "base": 2,
     "per_level_above_first": 8
   },
-  "primary_items": "#minecraft:enchantable/chest_armor",
+  "primary_items": "#minecraft:enchantable/foot_armor",
   "slots": [
-    "chest"
+    "feet"
   ],
-  "supported_items": "#overenchanted:enchantable/enraged",
-  "weight": 1
+  "supported_items": "#overenchanted:enchantable/fleetfoot",
+  "weight": 2
 }

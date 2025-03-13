@@ -32,9 +32,17 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .addTag(ItemTags.DURABILITY_ENCHANTABLE)
         ;
 
-        tag(ModTags.Items.ENRAGED_ITEMS)
+        tag(ModTags.Items.ENRAGED_ENCHANTABLE)
                 .addTag(ItemTags.CHEST_ARMOR)
                 .add(Items.ELYTRA)
+        ;
+
+        tag(ModTags.Items.FLEETFOOT_ENCHANTABLE)
+                .addTag(ItemTags.FOOT_ARMOR)
+        ;
+
+        tag(ModTags.Items.AQUA_MINER_ENCHANTABLE)
+                .addTag(ItemTags.HEAD_ARMOR)
         ;
     }
 }

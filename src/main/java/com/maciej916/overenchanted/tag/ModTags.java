@@ -33,7 +33,9 @@ public class ModTags {
         public static final TagKey<Item> FREE_RIDING_ENCHANTABLE = tag("enchantable/free_riding");
         public static final TagKey<Item> ETERNAL_ENCHANTABLE = tag("enchantable/eternal");
         public static final TagKey<Item> IGNORANCE_ENCHANTABLE = tag("enchantable/ignorance");
-        public static final TagKey<Item> ENRAGED_ITEMS = tag("enchantable/enraged");
+        public static final TagKey<Item> ENRAGED_ENCHANTABLE = tag("enchantable/enraged");
+        public static final TagKey<Item> FLEETFOOT_ENCHANTABLE = tag("enchantable/fleetfoot");
+        public static final TagKey<Item> AQUA_MINER_ENCHANTABLE = tag("enchantable/aqua_miner");
 
 
 

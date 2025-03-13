@@ -3,6 +3,9 @@
         "overenchanted:eternal",
         "overenchanted:breaking_curse",
         "overenchanted:ignorance_curse",
-        "overenchanted:enraged"
+        "overenchanted:enraged",
+        "overenchanted:inefficiency_curse",
+        "overenchanted:fleetfoot",
+        "overenchanted:explosive_shot"
     ]
 }

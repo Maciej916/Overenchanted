@@ -1,4 +1,7 @@
 {
+  "painting.overenchanted.runes_colors.title": "Runes & Colors",
+  "painting.overenchanted.runes_colors.author": "Overenchanted",
+
   "enchantment.overenchanted.blazing_edge": "Blazing Edge",
   "enchantment.overenchanted.blazing_edge.desc": "Grants a chance to ignite nearby enemies on hit.",
 
@@ -8,8 +11,8 @@
   "enchantment.overenchanted.breaking_curse": "Curse Of Breaking",
   "enchantment.overenchanted.breaking_curse.desc": "Causes the item to break faster with use.",
 
-  "enchantment.overenchanted.detonation": "Detonation",
-  "enchantment.overenchanted.detonation.desc": "Creates a small explosion when hitting a mob.",
+  "enchantment.overenchanted.explosive_shot": "Explosive Shot",
+  "enchantment.overenchanted.explosive_shot.desc": "Creates a small explosion when hitting a mob.",
 
   "enchantment.overenchanted.enraged": "Enraged",
   "enchantment.overenchanted.enraged.desc": "Increases attack damage by +30% and reduces armor by -20% per level.",
@@ -18,7 +21,7 @@
   "enchantment.overenchanted.eternal.desc": "Prevents the item from despawning.",
 
   "enchantment.overenchanted.floating": "Floating",
-  "enchantment.overenchanted.floating.desc": " Causes the enemy to float for a short period of time.",
+  "enchantment.overenchanted.floating.desc": "Causes the enemy to float for a short period of time.",
 
   "enchantment.overenchanted.free_riding": "Free Riding",
   "enchantment.overenchanted.free_riding.desc": "Prevents durability from decreasing while boosting speed on a pig or strider.",
@@ -30,5 +33,20 @@
   "enchantment.overenchanted.paralysis.desc": "Applies paralysis to a mob, preventing it from moving, jumping, or attacking for a short period of time.",
 
   "enchantment.overenchanted.reinforced_tip": "Reinforced Tip",
-  "enchantment.overenchanted.reinforced_tip.desc": "Increases the speed of breaking harder materials."
+  "enchantment.overenchanted.reinforced_tip.desc": "Increases the speed of breaking harder materials.",
+
+  "enchantment.overenchanted.fleetfoot": "Fleetfoot",
+  "enchantment.overenchanted.fleetfoot.desc": "Increases movement speed by +15% but reduces knockback resistance by -20% per level.",
+
+  "enchantment.overenchanted.aqua_glide": "Aqua Glide",
+  "enchantment.overenchanted.aqua_glide.desc": "Improves movement speed in water.",
+
+  "enchantment.overenchanted.aqua_miner": "Aqua Miner",
+  "enchantment.overenchanted.aqua_miner.desc": "Increases mining speed while submerged in water.",
+
+  "enchantment.overenchanted.high_step": "High Step",
+  "enchantment.overenchanted.high_step.desc": "Increases step height.",
+
+  "enchantment.overenchanted.inefficiency_curse": "Curse Of Inefficiency",
+  "enchantment.overenchanted.inefficiency_curse.desc": "Reduces mining efficiency."
 }
