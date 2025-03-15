@@ -10,6 +10,8 @@ import net.minecraft.world.item.enchantment.Enchantment;
 
 public class ModEnchantments {
     public static final ResourceKey<Enchantment> BLAZING_EDGE = create("blazing_edge");
+    public static final ResourceKey<Enchantment> FASTER_ATTACK = create("faster_attack");
+    public static final ResourceKey<Enchantment> LIFEBINDER = create("lifebinder");
 
     public static final ResourceKey<Enchantment> REINFORCED_TIP = create("reinforced_tip");
 
@@ -34,6 +36,7 @@ public class ModEnchantments {
     public static final ResourceKey<Enchantment> INEFFICIENCY_CURSE = create("inefficiency_curse");
     public static final ResourceKey<Enchantment> IGNORANCE_CURSE = create("ignorance_curse");
 
+    public static final ResourceKey<Enchantment> STUN = create("stun");
 
 
     private static ResourceKey<Enchantment> create(String name) {
@@ -42,13 +45,14 @@ public class ModEnchantments {
 
     public static void bootstrap(BootstrapContext<Enchantment> context) {
         register(context, BLAZING_EDGE, BlazingEdgeEnchantment.builder(context));
+        register(context, FASTER_ATTACK, FasterAttackEnchantment.builder(context));
+        register(context, LIFEBINDER, LifebinderEnchantment.builder(context));
 
         register(context, REINFORCED_TIP, ReinforcedTipEnchantment.builder(context));
 
         register(context, FREE_RIDING, FreeRidingEnchantment.builder(context));
 
         register(context, FLOATING, FloatingEnchantment.builder(context));
-
         register(context, EXPLOSIVE_SHOT, ExplosiveShotEnchantment.builder(context));
         register(context, PARALYSIS, ParalysisEnchantment.builder(context));
 //        register(context, QUICK_DRAW, QuickDrawEnchantment.builder(context));
@@ -66,7 +70,7 @@ public class ModEnchantments {
 
         register(context, ETERNAL, EternalEnchantment.builder(context));
 
-
+        register(context, STUN, StunEnchantment.builder(context));
 
 
     }

@@ -2,6 +2,7 @@ package com.maciej916.overenchanted;
 
 import com.maciej916.overenchanted.attribute.ModAttributes;
 import com.maciej916.overenchanted.block.ModBlocks;
+import com.maciej916.overenchanted.effect.ModEffects;
 import com.maciej916.overenchanted.enchantment.ModEnchantmentEffects;
 import com.maciej916.overenchanted.item.ModItems;
 import org.slf4j.Logger;
@@ -38,6 +39,7 @@ public class Overenchanted {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModEffects.register(modEventBus);
         ModAttributes.register(modEventBus);
         ModEnchantmentEffects.register(modEventBus);
     }

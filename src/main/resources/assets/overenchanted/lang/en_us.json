@@ -2,6 +2,8 @@
   "painting.overenchanted.runes_colors.title": "Runes & Colors",
   "painting.overenchanted.runes_colors.author": "Overenchanted",
 
+  "effect.overenchanted.stun": "Stun",
+
   "enchantment.overenchanted.blazing_edge": "Blazing Edge",
   "enchantment.overenchanted.blazing_edge.desc": "Grants a chance to ignite nearby enemies on hit.",
 
@@ -48,5 +50,14 @@
   "enchantment.overenchanted.high_step.desc": "Increases step height.",
 
   "enchantment.overenchanted.inefficiency_curse": "Curse Of Inefficiency",
-  "enchantment.overenchanted.inefficiency_curse.desc": "Reduces mining efficiency."
+  "enchantment.overenchanted.inefficiency_curse.desc": "Reduces mining efficiency.",
+
+  "enchantment.overenchanted.faster_attack": "Faster Attack",
+  "enchantment.overenchanted.faster_attack.desc": "Increases attack speed.",
+
+  "enchantment.overenchanted.lifebinder": "Lifebinder",
+  "enchantment.overenchanted.lifebinder.desc": "Attacking an enemy has a chance to heal your pets within a 5-block radius.",
+
+  "enchantment.overenchanted.stun": "Stun",
+  "enchantment.overenchanted.stun.desc": "Attacking when falling from over 2 blocks stuns the enemy (excluding bosses)."
 }

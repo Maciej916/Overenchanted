@@ -19,7 +19,6 @@ public class DataGenerators {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
-
     }
 
     @SubscribeEvent
@@ -31,9 +30,19 @@ public class DataGenerators {
         generator.addProvider(true, new ModDatapackProvider(packOutput, lookupProvider));
         generator.addProvider(true, new ModEnchantmentTagProvider(packOutput, lookupProvider));
 
+        generator.addProvider(true, new ModMinecraftEnchantmentTagProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new ModMinecraftPaintingVariantTagsProvider(packOutput, lookupProvider));
+
         BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider);
 
         generator.addProvider(true, blockTagsProvider);
         generator.addProvider(true, new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter()));
+
+//        generator.addProvider(true, new ModGlobalLootModifierProvider(packOutput, lookupProvider));
+//        generator.addProvider(true,
+//                new LootTableProvider(packOutput, Collections.emptySet(), List.of(
+//                        new LootTableProvider.SubProviderEntry(ChestLootProvider::new, LootContextParamSets.CHEST)),
+//                        lookupProvider)
+//                );
     }
 }
