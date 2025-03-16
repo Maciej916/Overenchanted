@@ -25,6 +25,8 @@ public class ModEnchantmentEffects {
     public static final Supplier<MapCodec<? extends EnchantmentEntityEffect>> PARALYSIS = ENTITY_ENCHANTMENT_EFFECTS.register("paralysis", () -> ParalysisEffect.CODEC);
     public static final Supplier<MapCodec<? extends EnchantmentEntityEffect>> STUN = ENTITY_ENCHANTMENT_EFFECTS.register("stun", () -> StunEnchantmentEffect.CODEC);
     public static final Supplier<MapCodec<? extends EnchantmentEntityEffect>> LIFEBINDER = ENTITY_ENCHANTMENT_EFFECTS.register("lifebinder", () -> LifebinderEnchantmentEffect.CODEC);
+    public static final Supplier<MapCodec<? extends EnchantmentEntityEffect>> AGONY = ENTITY_ENCHANTMENT_EFFECTS.register("agony", () -> AgonyEnchantmentEffect.CODEC);
+    public static final Supplier<MapCodec<? extends EnchantmentEntityEffect>> AQUA_GLIDE = ENTITY_ENCHANTMENT_EFFECTS.register("aqua_glide", () -> AquaGlideEffect.CODEC);
 
     public static final Supplier<MapCodec<? extends EnchantmentValueEffect>> INCREASE_DAMAGE = VALUE_ENCHANTMENT_EFFECTS.register("increase_damage", () -> IncreaseDamageEffect.CODEC);
 

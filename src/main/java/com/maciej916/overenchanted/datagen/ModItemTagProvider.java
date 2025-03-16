@@ -44,6 +44,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ModTags.Items.AQUA_MINER_ENCHANTABLE)
                 .addTag(ItemTags.HEAD_ARMOR)
         ;
+
+        tag(ModTags.Items.ECHO_SIGHT_ENCHANTABLE)
+                .addTag(ModTags.Items.commonTag("armors"))
+        ;
+
+        tag(ModTags.Items.LUMBERJACK_ENCHANTABLE)
+                .addTag(ItemTags.AXES)
+        ;
     }
 }
 

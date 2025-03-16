@@ -1,17 +1,18 @@
 package com.maciej916.overenchanted.enchantment.impl;
 
 import com.maciej916.overenchanted.Overenchanted;
+import com.maciej916.overenchanted.enchantment.effect.AquaGlideEffect;
 import com.maciej916.overenchanted.tag.ModTags;
 import com.maciej916.overenchanted.util.EnchantmentRarity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentEffectComponents;
+import net.minecraft.world.item.enchantment.EnchantmentTarget;
 import net.minecraft.world.item.enchantment.LevelBasedValue;
 import net.minecraft.world.item.enchantment.effects.EnchantmentAttributeEffect;
 
@@ -36,9 +37,15 @@ public class AquaGlideEnchantment {
                         new EnchantmentAttributeEffect(
                                 ResourceLocation.fromNamespaceAndPath(Overenchanted.MOD_ID, "enchantment.aqua_glide_water_movement_efficiency"),
                                 Attributes.WATER_MOVEMENT_EFFICIENCY,
-                                LevelBasedValue.perLevel(5f),
+                                LevelBasedValue.perLevel(0.33333334F),
                                 AttributeModifier.Operation.ADD_VALUE
                         )
+                )
+                .withEffect(
+                        EnchantmentEffectComponents.POST_ATTACK,
+                        EnchantmentTarget.VICTIM,
+                        EnchantmentTarget.VICTIM,
+                        new AquaGlideEffect()
                 );
     }
 }

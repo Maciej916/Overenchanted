@@ -4,6 +4,7 @@ import com.maciej916.overenchanted.Overenchanted;
 import com.maciej916.overenchanted.tag.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 
@@ -41,5 +42,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.HAY_BLOCK)
         ;
 
+
+        tag(ModTags.Blocks.LUMBERJACK_BLOCKS)
+                .addTag(BlockTags.LOGS)
+                .addTag(ModTags.Blocks.commonTag("stripped_logs"))
+        ;
     }
 }

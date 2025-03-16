@@ -20,10 +20,6 @@ public record LifebinderEnchantmentEffect() implements EnchantmentEntityEffect {
     public void apply(ServerLevel serverLevel, int enchantmentLevel, EnchantedItemInUse enchantedItemInUse, Entity entity, Vec3 vec3) {
         int RANGE = 5;
 
-        if (entity instanceof Enemy) {
-            System.out.println("IS ENEMY!");
-        }
-
         List<TamableAnimal> nearbyEntities = serverLevel.getEntitiesOfClass(TamableAnimal.class, entity.getBoundingBox().inflate(RANGE));
         for (TamableAnimal tamableAnimal : nearbyEntities) {
             if (tamableAnimal != entity && tamableAnimal.isTame()) {

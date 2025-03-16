@@ -16,6 +16,7 @@ public class ModTags {
     public static class Blocks {
 
         public static final TagKey<Block> REINFORCED_TIP_BLOCKS = tag("reinforced_tip_blocks");
+        public static final TagKey<Block> LUMBERJACK_BLOCKS = tag("lumberjack_blocks");
 
 
 
@@ -36,6 +37,8 @@ public class ModTags {
         public static final TagKey<Item> ENRAGED_ENCHANTABLE = tag("enchantable/enraged");
         public static final TagKey<Item> FLEETFOOT_ENCHANTABLE = tag("enchantable/fleetfoot");
         public static final TagKey<Item> AQUA_MINER_ENCHANTABLE = tag("enchantable/aqua_miner");
+        public static final TagKey<Item> ECHO_SIGHT_ENCHANTABLE = tag("enchantable/echo_sight");
+        public static final TagKey<Item> LUMBERJACK_ENCHANTABLE = tag("enchantable/lumberjack");
 
 
 

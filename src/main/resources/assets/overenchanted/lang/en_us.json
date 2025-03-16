@@ -4,6 +4,12 @@
 
   "effect.overenchanted.stun": "Stun",
 
+  "key.categories.overenchanted": "Overenchanted",
+  "key.overenchanted.echo_sight": "Echo Sight Enchantment Use",
+  "key.overenchanted.lumberjack": "Lumberjack Enchantment Button",
+
+  "overenchanted.echo_sight_countdown": "Echo Sight Cooldown %s Seconds",
+
   "enchantment.overenchanted.blazing_edge": "Blazing Edge",
   "enchantment.overenchanted.blazing_edge.desc": "Grants a chance to ignite nearby enemies on hit.",
 
@@ -41,7 +47,7 @@
   "enchantment.overenchanted.fleetfoot.desc": "Increases movement speed by +15% but reduces knockback resistance by -20% per level.",
 
   "enchantment.overenchanted.aqua_glide": "Aqua Glide",
-  "enchantment.overenchanted.aqua_glide.desc": "Improves movement speed in water.",
+  "enchantment.overenchanted.aqua_glide.desc": "Boosts swim speed and grants the dolphin effect when hurt.",
 
   "enchantment.overenchanted.aqua_miner": "Aqua Miner",
   "enchantment.overenchanted.aqua_miner.desc": "Increases mining speed while submerged in water.",
@@ -59,5 +65,14 @@
   "enchantment.overenchanted.lifebinder.desc": "Attacking an enemy has a chance to heal your pets within a 5-block radius.",
 
   "enchantment.overenchanted.stun": "Stun",
-  "enchantment.overenchanted.stun.desc": "Attacking when falling from over 2 blocks stuns the enemy (excluding bosses)."
+  "enchantment.overenchanted.stun.desc": "Attacking when falling from over 2 blocks stuns the enemy (excluding bosses).",
+
+  "enchantment.overenchanted.agony_curse": "Curse Of Agony",
+  "enchantment.overenchanted.agony_curse.desc": "Inflicts severe pain when equipped.",
+
+  "enchantment.overenchanted.echo_sight": "Echo Sight",
+  "enchantment.overenchanted.echo_sight.desc": "Reveals hidden targets. Check keybindings to activate.",
+
+  "enchantment.overenchanted.lumberjack": "Lumberjack",
+  "enchantment.overenchanted.lumberjack.desc": "Hold the Lumberjack Key to chop down entire trees at once."
 }

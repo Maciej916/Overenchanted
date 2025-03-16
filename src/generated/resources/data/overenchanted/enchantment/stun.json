@@ -1,5 +1,5 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 2,
   "description": {
     "translate": "enchantment.overenchanted.stun"
   },
@@ -16,12 +16,12 @@
   },
   "exclusive_set": "#minecraft:exclusive_set/damage",
   "max_cost": {
-    "base": 65,
+    "base": 25,
     "per_level_above_first": 8
   },
   "max_level": 4,
   "min_cost": {
-    "base": 15,
+    "base": 5,
     "per_level_above_first": 8
   },
   "slots": [

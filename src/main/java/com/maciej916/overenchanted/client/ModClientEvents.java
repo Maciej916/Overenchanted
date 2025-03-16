@@ -1,0 +1,36 @@
+package com.maciej916.overenchanted.client;
+
+import com.maciej916.overenchanted.Overenchanted;
+import com.maciej916.overenchanted.client.impl.EchoSightClickHandler;
+import com.maciej916.overenchanted.client.impl.LumberjackClickHandler;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.world.entity.player.Player;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.ClientTickEvent;
+
+@EventBusSubscriber(modid = Overenchanted.MOD_ID, bus = EventBusSubscriber.Bus.GAME, value = Dist.CLIENT)
+public class ModClientEvents {
+    private static boolean lastLumberjack = false;
+
+    @SubscribeEvent
+    public static void onClientTick(ClientTickEvent.Post event) {
+        Player player = Minecraft.getInstance().player;
+        if (player == null || !(player.level() instanceof ClientLevel level)) return;
+
+        while (ModKeyMappings.KEY_ECHO_SIGHT.consumeClick()) {
+            EchoSightClickHandler.handle();
+        }
+
+        boolean currentLumberjack = ModKeyMappings.KEY_LUMBERJACK.isDown();
+        if (currentLumberjack != lastLumberjack) {
+            LumberjackClickHandler.handle(currentLumberjack);
+            lastLumberjack = currentLumberjack;
+            ModKeyMappings.KEY_LUMBERJACK.consumeClick();
+        }
+    }
+
+
+}

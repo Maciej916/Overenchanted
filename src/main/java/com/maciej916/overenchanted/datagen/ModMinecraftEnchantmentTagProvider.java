@@ -27,12 +27,14 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.REINFORCED_TIP)
                 .add(ModEnchantments.HIGH_STEP)
                 .add(ModEnchantments.STUN)
+                .add(ModEnchantments.LUMBERJACK)
         ;
 
         tag(EnchantmentTags.CURSE)
                 .add(ModEnchantments.BREAKING_CURSE)
                 .add(ModEnchantments.INEFFICIENCY_CURSE)
                 .add(ModEnchantments.IGNORANCE_CURSE)
+                .add(ModEnchantments.AGONY_CURSE)
         ;
 
         tag(EnchantmentTags.ON_MOB_SPAWN_EQUIPMENT)
@@ -41,6 +43,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.ENRAGED)
                 .add(ModEnchantments.FLEETFOOT)
                 .add(ModEnchantments.PARALYSIS)
+                .add(ModEnchantments.AGONY_CURSE)
+                .add(ModEnchantments.LUMBERJACK)
         ;
 
         tag(EnchantmentTags.ON_RANDOM_LOOT)
@@ -53,6 +57,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.PARALYSIS)
                 .add(ModEnchantments.HIGH_STEP)
                 .add(ModEnchantments.EXPLOSIVE_SHOT)
+                .add(ModEnchantments.AGONY_CURSE)
+                .add(ModEnchantments.LUMBERJACK)
         ;
 
         tag(EnchantmentTags.TRADEABLE)
@@ -75,12 +81,16 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.STUN)
                 .add(ModEnchantments.FASTER_ATTACK)
                 .add(ModEnchantments.LIFEBINDER)
+                .add(ModEnchantments.AGONY_CURSE)
+                .add(ModEnchantments.ECHO_SIGHT)
+                .add(ModEnchantments.LUMBERJACK)
         ;
 
         tag(EnchantmentTags.TREASURE)
                 .add(ModEnchantments.AQUA_GLIDE)
                 .add(ModEnchantments.AQUA_MINER)
                 .add(ModEnchantments.FASTER_ATTACK)
+                .add(ModEnchantments.ECHO_SIGHT)
         ;
     }
 }
