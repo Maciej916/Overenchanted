@@ -28,6 +28,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.HIGH_STEP)
                 .add(ModEnchantments.STUN)
                 .add(ModEnchantments.LUMBERJACK)
+                .add(ModEnchantments.SONIC_BOOM_PROTECTION)
+                .add(ModEnchantments.ECHO_SLAYER)
         ;
 
         tag(EnchantmentTags.CURSE)
@@ -45,6 +47,7 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.PARALYSIS)
                 .add(ModEnchantments.AGONY_CURSE)
                 .add(ModEnchantments.LUMBERJACK)
+                .add(ModEnchantments.SONIC_BOOM_PROTECTION)
         ;
 
         tag(EnchantmentTags.ON_RANDOM_LOOT)
@@ -84,6 +87,9 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.AGONY_CURSE)
                 .add(ModEnchantments.ECHO_SIGHT)
                 .add(ModEnchantments.LUMBERJACK)
+                .add(ModEnchantments.SONIC_BOOM_PROTECTION)
+                .add(ModEnchantments.ECHO_SLAYER)
+                .add(ModEnchantments.DEEPFOOT)
         ;
 
         tag(EnchantmentTags.TREASURE)
@@ -91,6 +97,7 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.AQUA_MINER)
                 .add(ModEnchantments.FASTER_ATTACK)
                 .add(ModEnchantments.ECHO_SIGHT)
+                .add(ModEnchantments.DEEPFOOT)
         ;
     }
 }

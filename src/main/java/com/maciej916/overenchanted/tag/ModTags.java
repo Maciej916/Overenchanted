@@ -6,6 +6,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.damagesource.DamageType;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.level.block.Block;
@@ -39,6 +41,7 @@ public class ModTags {
         public static final TagKey<Item> AQUA_MINER_ENCHANTABLE = tag("enchantable/aqua_miner");
         public static final TagKey<Item> ECHO_SIGHT_ENCHANTABLE = tag("enchantable/echo_sight");
         public static final TagKey<Item> LUMBERJACK_ENCHANTABLE = tag("enchantable/lumberjack");
+        public static final TagKey<Item> SONIC_BOOM_ENCHANTABLE = tag("enchantable/sonic_boom");
 
 
 
@@ -57,6 +60,24 @@ public class ModTags {
 
         public static TagKey<Enchantment> tag(String name) {
             return TagKey.create(Registries.ENCHANTMENT, ResourceLocation.fromNamespaceAndPath(Overenchanted.MOD_ID, name));
+        }
+    }
+
+    public static class Entities {
+        public static final TagKey<EntityType<?>> SENSITIVE_TO_ECHO_SLAYER = tag("sensitive_to_echo_slayer");
+
+
+
+        public static TagKey<EntityType<?>> tag(String name) {
+            return TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.fromNamespaceAndPath(Overenchanted.MOD_ID, name));
+        }
+    }
+
+    public static class DamageTypes {
+
+
+        public static TagKey<DamageType> tag(String name) {
+            return TagKey.create(Registries.DAMAGE_TYPE, ResourceLocation.fromNamespaceAndPath(Overenchanted.MOD_ID, name));
         }
     }
 

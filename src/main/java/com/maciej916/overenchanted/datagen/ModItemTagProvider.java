@@ -52,6 +52,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ModTags.Items.LUMBERJACK_ENCHANTABLE)
                 .addTag(ItemTags.AXES)
         ;
+
+        tag(ModTags.Items.SONIC_BOOM_ENCHANTABLE)
+                .addTag(ModTags.Items.commonTag("armors"))
+        ;
     }
 }
 

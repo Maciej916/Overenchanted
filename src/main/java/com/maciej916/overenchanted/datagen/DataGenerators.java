@@ -29,6 +29,8 @@ public class DataGenerators {
 
         generator.addProvider(true, new ModDatapackProvider(packOutput, lookupProvider));
         generator.addProvider(true, new ModEnchantmentTagProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new ModEntityTypeTagProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new ModDamageTypeRagProvider(packOutput, lookupProvider));
 
         generator.addProvider(true, new ModMinecraftEnchantmentTagProvider(packOutput, lookupProvider));
         generator.addProvider(true, new ModMinecraftPaintingVariantTagsProvider(packOutput, lookupProvider));

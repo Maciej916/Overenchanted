@@ -20,9 +20,8 @@ public record BlazingEdgeEnchantmentEffect() implements EnchantmentEntityEffect 
     @Override
     public void apply(ServerLevel serverLevel, int enchantmentLevel, EnchantedItemInUse enchantedItemInUse, Entity entity, Vec3 vec3) {
         int RANGE = 3;
-        List<LivingEntity> nearbyEntities = serverLevel.getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(RANGE));
-        for (LivingEntity nearbyEntity : nearbyEntities) {
-            if (!(nearbyEntity instanceof Monster)) continue;
+        List<Monster> nearbyEntities = serverLevel.getEntitiesOfClass(Monster.class, entity.getBoundingBox().inflate(RANGE));
+        for (Monster nearbyEntity : nearbyEntities) {
             if (!hasLineOfSight(entity, nearbyEntity, serverLevel)) continue;
 
             int random = serverLevel.random.nextInt(100);
