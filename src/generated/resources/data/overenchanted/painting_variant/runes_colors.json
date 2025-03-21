@@ -1,13 +1,5 @@
 {
   "asset_id": "overenchanted:runes_colors",
-  "author": {
-    "color": "gray",
-    "translate": "painting.overenchanted.runes_colors.author"
-  },
   "height": 3,
-  "title": {
-    "color": "yellow",
-    "translate": "painting.overenchanted.runes_colors.title"
-  },
   "width": 5
 }

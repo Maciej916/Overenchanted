@@ -11,7 +11,7 @@
           "base": 0.15,
           "per_level_above_first": 0.15
         },
-        "attribute": "minecraft:movement_speed",
+        "attribute": "minecraft:generic.movement_speed",
         "id": "overenchanted:enchantment.fleetfoot_movement_speed",
         "operation": "add_multiplied_total"
       },
@@ -21,7 +21,7 @@
           "base": -0.2,
           "per_level_above_first": -0.2
         },
-        "attribute": "minecraft:knockback_resistance",
+        "attribute": "minecraft:generic.knockback_resistance",
         "id": "overenchanted:enchantment.fleetfoot_knockback_resistance",
         "operation": "add_multiplied_total"
       }

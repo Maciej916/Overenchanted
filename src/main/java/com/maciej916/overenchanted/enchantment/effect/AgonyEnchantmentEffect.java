@@ -15,7 +15,7 @@ public record AgonyEnchantmentEffect() implements EnchantmentEntityEffect {
     @Override
     public void apply(ServerLevel serverLevel, int enchantmentLevel, EnchantedItemInUse enchantedItemInUse, Entity entity, Vec3 vec3) {
         if (entity instanceof ServerPlayer player && player.tickCount % 20 == 0 && !player.getAbilities().instabuild && !player.isSpectator()) {
-            player.hurtServer(serverLevel, player.damageSources().genericKill(), 0.5F * enchantmentLevel);
+            player.hurt(player.damageSources().genericKill(), 0.5F * enchantmentLevel);
             spawnDamageParticles(serverLevel, player);
         }
     }

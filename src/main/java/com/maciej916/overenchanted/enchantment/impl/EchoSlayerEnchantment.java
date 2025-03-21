@@ -40,7 +40,7 @@ public class EchoSlayerEnchantment {
                         new AddValue(LevelBasedValue.perLevel(4.0F)),
                         LootItemEntityPropertyCondition.hasProperties(
                                 LootContext.EntityTarget.THIS,
-                                EntityPredicate.Builder.entity().entityType(EntityTypePredicate.of(entities, ModTags.Entities.SENSITIVE_TO_ECHO_SLAYER))
+                                EntityPredicate.Builder.entity().entityType(EntityTypePredicate.of(ModTags.Entities.SENSITIVE_TO_ECHO_SLAYER))
                         )
                 );
     }

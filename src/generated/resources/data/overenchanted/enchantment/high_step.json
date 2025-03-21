@@ -11,7 +11,7 @@
           "base": 0.5,
           "per_level_above_first": 0.5
         },
-        "attribute": "minecraft:step_height",
+        "attribute": "minecraft:generic.step_height",
         "id": "overenchanted:enchantment.high_step_step_height",
         "operation": "add_value"
       }

@@ -31,10 +31,7 @@
           "block_state": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "overenchanted:melted_cobblestone",
-              "Properties": {
-                "age": "0"
-              }
+              "Name": "overenchanted:melted_cobblestone"
             }
           },
           "height": 1.0,

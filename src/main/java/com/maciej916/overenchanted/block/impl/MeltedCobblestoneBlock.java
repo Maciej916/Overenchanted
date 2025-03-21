@@ -1,11 +1,7 @@
 package com.maciej916.overenchanted.block.impl;
 
-import com.maciej916.overenchanted.Overenchanted;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.EnchantmentTags;
 import net.minecraft.util.Mth;
@@ -27,7 +23,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.redstone.Orientation;
 
 import javax.annotation.Nullable;
 
@@ -36,7 +31,6 @@ public class MeltedCobblestoneBlock extends Block {
 
     public MeltedCobblestoneBlock() {
         super(BlockBehaviour.Properties.of()
-                .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Overenchanted.MOD_ID, "melted_cobblestone")))
                 .mapColor(MapColor.STONE)
                 .strength(6F)
                 .sound(SoundType.STONE)
@@ -46,26 +40,26 @@ public class MeltedCobblestoneBlock extends Block {
     }
 
     @Override
-    public void onPlace(BlockState blockState, Level level, BlockPos blockPos, BlockState oldState, boolean movedByPiston) {
-        level.scheduleTick(blockPos, this, Mth.nextInt(level.getRandom(), 60, 120));
+    public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean movedByPiston) {
+        level.scheduleTick(pos, this, Mth.nextInt(level.getRandom(), 60, 120));
     }
 
     @Override
-    protected void tick(BlockState blockState, ServerLevel serverLevel, BlockPos blockPos, RandomSource randomSource) {
-        if ((randomSource.nextInt(3) == 0 || this.fewerNeigboursThan(serverLevel, blockPos, 4))
-                && serverLevel.getMaxLocalRawBrightness(blockPos) > 11 - blockState.getValue(AGE) - blockState.getLightBlock()
-                && this.slightlyMelt(blockState, serverLevel, blockPos)) {
+    protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+        if ((random.nextInt(3) == 0 || this.fewerNeigboursThan(level, pos, 4))
+                && level.getMaxLocalRawBrightness(pos) > 11 - state.getValue(AGE) - state.getLightBlock(level, pos)
+                && this.slightlyMelt(state, level, pos)) {
             BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos();
 
             for (Direction direction : Direction.values()) {
-                blockpos$mutableblockpos.setWithOffset(blockPos, direction);
-                BlockState blockstate = serverLevel.getBlockState(blockpos$mutableblockpos);
-                if (blockstate.is(this) && !this.slightlyMelt(blockstate, serverLevel, blockpos$mutableblockpos)) {
-                    serverLevel.scheduleTick(blockpos$mutableblockpos, this, Mth.nextInt(randomSource, 20, 40));
+                blockpos$mutableblockpos.setWithOffset(pos, direction);
+                BlockState blockstate = level.getBlockState(blockpos$mutableblockpos);
+                if (blockstate.is(this) && !this.slightlyMelt(blockstate, level, blockpos$mutableblockpos)) {
+                    level.scheduleTick(blockpos$mutableblockpos, this, Mth.nextInt(random, 20, 40));
                 }
             }
         } else {
-            serverLevel.scheduleTick(blockPos, this, Mth.nextInt(randomSource, 20, 40));
+            level.scheduleTick(pos, this, Mth.nextInt(random, 20, 40));
         }
     }
 
@@ -81,12 +75,12 @@ public class MeltedCobblestoneBlock extends Block {
     }
 
     @Override
-    protected void neighborChanged(BlockState blockState, Level level, BlockPos blockPos, Block neighborBlock, @Nullable Orientation orientation, boolean movedByPiston) {
-        if (neighborBlock.defaultBlockState().is(this) && this.fewerNeigboursThan(level, blockPos, 2)) {
-            this.melt(blockState, level, blockPos);
+    protected void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
+        if (block.defaultBlockState().is(this) && this.fewerNeigboursThan(level, pos, 2)) {
+            this.melt(state, level, pos);
         }
 
-        super.neighborChanged(blockState, level, blockPos, neighborBlock, orientation, movedByPiston);
+        super.neighborChanged(state, level, pos, block, fromPos, isMoving);
     }
 
     private boolean fewerNeigboursThan(BlockGetter level, BlockPos pos, int neighborsRequired) {
@@ -105,15 +99,6 @@ public class MeltedCobblestoneBlock extends Block {
         return true;
     }
 
-    @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(AGE);
-    }
-
-    @Override
-    protected ItemStack getCloneItemStack(LevelReader level, BlockPos blockPos, BlockState blockState, boolean includeData) {
-        return ItemStack.EMPTY;
-    }
 
     public static BlockState meltsInto() {
         return Blocks.LAVA.defaultBlockState();
@@ -136,14 +121,24 @@ public class MeltedCobblestoneBlock extends Block {
     }
 
     @Override
-    protected void randomTick(BlockState blockState, ServerLevel serverLevel, BlockPos blockPos, RandomSource randomSource) {
-        if (serverLevel.getBrightness(LightLayer.BLOCK, blockPos) > 11 - blockState.getLightBlock()) {
-            this.melt(blockState, serverLevel, blockPos);
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(AGE);
+    }
+
+    @Override
+    public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state) {
+        return ItemStack.EMPTY;
+    }
+
+    @Override
+    protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+        if (level.getBrightness(LightLayer.BLOCK, pos) > 11 - state.getLightBlock(level, pos)) {
+            this.melt(state, level, pos);
         }
     }
 
     protected void melt(BlockState state, Level level, BlockPos pos) {
         level.setBlockAndUpdate(pos, meltsInto());
-        level.neighborChanged(pos, meltsInto().getBlock(), null);
+        level.neighborChanged(pos, meltsInto().getBlock(), pos);
     }
 }

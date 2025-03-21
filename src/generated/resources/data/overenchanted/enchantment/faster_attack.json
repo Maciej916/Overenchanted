@@ -11,7 +11,7 @@
           "base": 1.0,
           "per_level_above_first": 1.0
         },
-        "attribute": "minecraft:attack_speed",
+        "attribute": "minecraft:generic.attack_speed",
         "id": "overenchanted:enchantment.faster_attack_attack_speed",
         "operation": "add_value"
       }

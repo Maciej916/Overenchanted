@@ -77,11 +77,11 @@
   "enchantment.overenchanted.lumberjack.desc": "Hold the Lumberjack Key to chop down entire trees at once.",
 
   "enchantment.overenchanted.echo_slayer": "Echo Slayer",
-  "enchantment.overenchanted.echo_slayer.desc": "Increases damage dealt to the Warden.",
+  "enchantment.overenchanted.echo_slayer.desc": "Increases damage dealt to Warden.",
 
   "enchantment.overenchanted.sonic_boom_protection": "Sonic Boom Protection",
-  "enchantment.overenchanted.sonic_boom_protection.desc": "Reduces damage from the Warden's sonic boom attack.",
+  "enchantment.overenchanted.sonic_boom_protection.desc": "Reduces damage from Warden's sonic boom attack.",
 
   "enchantment.overenchanted.deepfoot": "Deepfoot",
-  "enchantment.overenchanted.deepfoot.desc": "Prevents the Warden from detecting the player."
+  "enchantment.overenchanted.deepfoot.desc": "Prevents Warden from detecting the player."
 }

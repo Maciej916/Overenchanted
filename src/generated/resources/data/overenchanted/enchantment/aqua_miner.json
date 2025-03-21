@@ -11,7 +11,7 @@
           "base": 0.15,
           "per_level_above_first": 0.15
         },
-        "attribute": "minecraft:submerged_mining_speed",
+        "attribute": "minecraft:player.submerged_mining_speed",
         "id": "overenchanted:enchantment.aqua_miner_submerged_mining_speed",
         "operation": "add_value"
       }

@@ -11,7 +11,7 @@
           "base": 0.3,
           "per_level_above_first": 0.3
         },
-        "attribute": "minecraft:attack_damage",
+        "attribute": "minecraft:generic.attack_damage",
         "id": "overenchanted:enchantment.enraged_attack_damage",
         "operation": "add_multiplied_total"
       },
@@ -21,7 +21,7 @@
           "base": -0.2,
           "per_level_above_first": -0.2
         },
-        "attribute": "minecraft:armor",
+        "attribute": "minecraft:generic.armor",
         "id": "overenchanted:enchantment.enraged_attack_armor",
         "operation": "add_multiplied_total"
       }
