@@ -24,6 +24,8 @@
     "overenchanted:lumberjack",
     "overenchanted:sonic_boom_protection",
     "overenchanted:echo_slayer",
-    "overenchanted:deepfoot"
+    "overenchanted:deepfoot",
+    "enchantment.overenchanted.combo",
+    "enchantment.overenchanted.multi_jump"
   ]
 }

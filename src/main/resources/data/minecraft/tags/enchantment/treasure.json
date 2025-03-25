@@ -4,6 +4,8 @@
     "overenchanted:aqua_miner",
     "overenchanted:faster_attack",
     "overenchanted:echo_sight",
-    "overenchanted:deepfoot"
+    "overenchanted:deepfoot",
+    "enchantment.overenchanted.combo",
+    "enchantment.overenchanted.multi_jump"
   ]
 }

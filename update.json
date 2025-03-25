@@ -2,10 +2,11 @@
   "homepage": "https:/curseforge.com/minecraft/mc-mods/overenchanted",
   "changelog": "https:/curseforge.com/minecraft/mc-mods/overenchanted/files",
   "1.21.1": {
+    "0.0.6": "https:/curseforge.com/minecraft/mc-mods/overenchanted/files/6342009",
     "0.0.5": "https:/curseforge.com/minecraft/mc-mods/overenchanted/files/6327986"
   },
   "promos": {
-    "1.21.1-latest": "1.21.1-0.0.5",
-    "1.21.1-recommended": "1.21.1-0.0.5"
+    "1.21.1-latest": "1.21.1-0.0.6",
+    "1.21.1-recommended": "1.21.1-0.0.6"
   }
 }

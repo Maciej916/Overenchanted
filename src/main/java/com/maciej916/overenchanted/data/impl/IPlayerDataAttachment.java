@@ -1,9 +1,9 @@
-package com.maciej916.overenchanted.capability.impl;
+package com.maciej916.overenchanted.data.impl;
 
 import net.minecraft.nbt.CompoundTag;
 import net.neoforged.neoforge.common.util.INBTSerializable;
 
-public interface IOPlayerCapability extends INBTSerializable<CompoundTag> {
+public interface IPlayerDataAttachment extends INBTSerializable<CompoundTag> {
     int getRevealCountdown();
     void setRevealCountdown(int seconds);
 

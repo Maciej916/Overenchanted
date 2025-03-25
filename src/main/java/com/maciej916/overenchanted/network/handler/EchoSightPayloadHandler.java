@@ -1,8 +1,9 @@
 package com.maciej916.overenchanted.network.handler;
 
 import com.maciej916.overenchanted.Overenchanted;
-import com.maciej916.overenchanted.capability.ModCapabilities;
-import com.maciej916.overenchanted.capability.impl.ScheduledTask;
+import com.maciej916.overenchanted.data.impl.ScheduledTask;
+import com.maciej916.overenchanted.data.ModDataAttachments;
+import com.maciej916.overenchanted.data.impl.PlayerDataAttachment;
 import com.maciej916.overenchanted.network.payload.EchoSightPayload;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.ParticleTypes;
@@ -23,10 +24,12 @@ public class EchoSightPayloadHandler {
     public static void handleDataOnNetwork(final EchoSightPayload data, final IPayloadContext context) {
         context.enqueueWork(() -> {
             Player player = context.player();
-            var capability = player.getCapability(ModCapabilities.OVERENCHANTED_PLAYER);
-            if (capability != null) {
-                if (capability.getRevealCountdown() > 0) {
-                    player.displayClientMessage(Component.translatable(Overenchanted.MOD_ID + ".echo_sight_countdown", Component.literal("" + capability.getRevealCountdown())).withStyle(ChatFormatting.RED), true);
+
+            if (player.hasData(ModDataAttachments.PLAYER_DATA)) {
+                PlayerDataAttachment playerDataAttachment = player.getData(ModDataAttachments.PLAYER_DATA);
+
+                if (playerDataAttachment.getRevealCountdown() > 0) {
+                    player.displayClientMessage(Component.translatable(Overenchanted.MOD_ID + ".echo_sight_countdown", Component.literal("" + playerDataAttachment.getRevealCountdown())).withStyle(ChatFormatting.RED), true);
                 } else {
                     ServerLevel serverLevel = (ServerLevel) player.level();
                     int duration = 20 * 4;
@@ -37,7 +40,7 @@ public class EchoSightPayloadHandler {
 
                     serverLevel.playSound(null, player.getOnPos(), SoundEvents.WARDEN_SONIC_CHARGE, SoundSource.PLAYERS, 1.0F, 1.0F);
 
-                    capability.scheduleTask(
+                    playerDataAttachment.scheduleTask(
                             new ScheduledTask(
                                     serverLevel.getServer().getTickCount() + 20 * 4,
                                     () -> {
@@ -53,7 +56,7 @@ public class EchoSightPayloadHandler {
                             )
                     );
 
-                    capability.setRevealCountdown(30);
+                    playerDataAttachment.setRevealCountdown(30);
                 }
             }
         })
