@@ -4,7 +4,6 @@ import com.maciej916.overenchanted.Overenchanted;
 import com.maciej916.overenchanted.data.ModDataComponents;
 import com.maciej916.overenchanted.tag.ModTags;
 import com.maciej916.overenchanted.util.EnchantmentRarity;
-import net.minecraft.advancements.critereon.PlayerHurtEntityTrigger;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;

@@ -4,7 +4,6 @@ import com.maciej916.overenchanted.Overenchanted;
 import com.maciej916.overenchanted.client.impl.EchoSightClickHandler;
 import com.maciej916.overenchanted.client.impl.LumberjackClickHandler;
 import com.maciej916.overenchanted.client.impl.MultiJumpHandler;
-import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
 import net.minecraft.client.multiplayer.ClientLevel;

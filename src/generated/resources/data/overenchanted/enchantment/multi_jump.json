@@ -4,12 +4,12 @@
     "translate": "enchantment.overenchanted.multi_jump"
   },
   "max_cost": {
-    "base": 60,
+    "base": 50,
     "per_level_above_first": 0
   },
   "max_level": 2,
   "min_cost": {
-    "base": 40,
+    "base": 20,
     "per_level_above_first": 0
   },
   "primary_items": "#minecraft:enchantable/foot_armor",

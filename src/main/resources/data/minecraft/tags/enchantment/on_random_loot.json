@@ -10,6 +10,8 @@
     "overenchanted:high_step",
     "overenchanted:explosive_shot",
     "overenchanted:agony_curse",
-    "overenchanted:lumberjack"
+    "overenchanted:lumberjack",
+    "overenchanted.reflect",
+    "overenchanted.ricochet"
   ]
 }

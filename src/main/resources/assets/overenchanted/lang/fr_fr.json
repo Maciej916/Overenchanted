@@ -1,0 +1,101 @@
+{
+  "painting.overenchanted.runes_colors.title": "Runes & Couleurs",
+  "painting.overenchanted.runes_colors.author": "Overenchanted",
+
+  "effect.overenchanted.stun": "Étourdissement",
+
+  "key.categories.overenchanted": "Overenchanted",
+  "key.overenchanted.echo_sight": "Utilisation de l'enchantement Vue d'Écho",
+  "key.overenchanted.lumberjack": "Bouton d'Enchantement Bûcheron",
+
+  "overenchanted.echo_sight_countdown": "Recharge de Vue d'Écho %s secondes",
+
+  "overenchanted.combo_lvl": "Combo : %s",
+
+  "enchantment.overenchanted.blazing_edge": "Tranchant Ardent",
+  "enchantment.overenchanted.blazing_edge.desc": "Donne une chance d'enflammer les ennemis proches lors d'un coup.",
+
+  "enchantment.overenchanted.blazing_walker": "Marcheur Ardent",
+  "enchantment.overenchanted.blazing_walker.desc": "Vous permet de marcher en toute sécurité sur la lave.",
+
+  "enchantment.overenchanted.breaking_curse": "Malédiction de la Rupture",
+  "enchantment.overenchanted.breaking_curse.desc": "Fait que l'objet se casse plus rapidement avec l'utilisation.",
+
+  "enchantment.overenchanted.explosive_shot": "Tir Explosif",
+  "enchantment.overenchanted.explosive_shot.desc": "Crée une petite explosion en touchant une créature.",
+
+  "enchantment.overenchanted.enraged": "Enragé",
+  "enchantment.overenchanted.enraged.desc": "Augmente les dégâts d'attaque de +30 % et réduit l'armure de -20 % par niveau.",
+
+  "enchantment.overenchanted.eternal": "Éternel",
+  "enchantment.overenchanted.eternal.desc": "Empêche l'objet de disparaître.",
+
+  "enchantment.overenchanted.floating": "Flottant",
+  "enchantment.overenchanted.floating.desc": "Fait léviter l'ennemi pendant une courte période.",
+
+  "enchantment.overenchanted.free_riding": "Équitation Gratuite",
+  "enchantment.overenchanted.free_riding.desc": "Empêche la durabilité de diminuer tout en augmentant la vitesse sur un cochon ou un dévoreur.",
+
+  "enchantment.overenchanted.ignorance_curse": "Malédiction de l'Ignorance",
+  "enchantment.overenchanted.ignorance_curse.desc": "Les créatures et les blocs minés ne lâchent pas d'expérience.",
+
+  "enchantment.overenchanted.paralysis": "Paralysie",
+  "enchantment.overenchanted.paralysis.desc": "Applique la paralysie à une créature, l'empêchant de se déplacer, de sauter ou d'attaquer pendant une courte période.",
+
+  "enchantment.overenchanted.reinforced_tip": "Pointe Renforcée",
+  "enchantment.overenchanted.reinforced_tip.desc": "Augmente la vitesse de cassage des matériaux durs.",
+
+  "enchantment.overenchanted.fleetfoot": "Pied Léger",
+  "enchantment.overenchanted.fleetfoot.desc": "Augmente la vitesse de déplacement de +15 % mais réduit la résistance au recul de -20 % par niveau.",
+
+  "enchantment.overenchanted.aqua_glide": "Glisse Aquatique",
+  "enchantment.overenchanted.aqua_glide.desc": "Augmente la vitesse de nage et confère l'effet dauphin lorsqu'il est blessé.",
+
+  "enchantment.overenchanted.aqua_miner": "Mineur Aquatique",
+  "enchantment.overenchanted.aqua_miner.desc": "Augmente la vitesse de minage lorsqu'il est immergé dans l'eau.",
+
+  "enchantment.overenchanted.high_step": "Grande Foulée",
+  "enchantment.overenchanted.high_step.desc": "Augmente la hauteur de marche.",
+
+  "enchantment.overenchanted.inefficiency_curse": "Malédiction de l'Inefficacité",
+  "enchantment.overenchanted.inefficiency_curse.desc": "Réduit l'efficacité du minage.",
+
+  "enchantment.overenchanted.faster_attack": "Attaque Rapide",
+  "enchantment.overenchanted.faster_attack.desc": "Augmente la vitesse d'attaque.",
+
+  "enchantment.overenchanted.lifebinder": "Lieur de Vie",
+  "enchantment.overenchanted.lifebinder.desc": "Attaquer un ennemi a une chance de soigner vos animaux de compagnie dans un rayon de 5 blocs.",
+
+  "enchantment.overenchanted.stun": "Étourdissement",
+  "enchantment.overenchanted.stun.desc": "Attaquer en tombant de plus de 2 blocs étourdit l'ennemi (à l'exception des boss).",
+
+  "enchantment.overenchanted.agony_curse": "Malédiction d'Agonie",
+  "enchantment.overenchanted.agony_curse.desc": "Inflige une douleur intense lorsqu'il est équipé.",
+
+  "enchantment.overenchanted.echo_sight": "Vue d'Écho",
+  "enchantment.overenchanted.echo_sight.desc": "Révèle les cibles cachées. Consultez les touches de raccourci pour l'activer.",
+
+  "enchantment.overenchanted.lumberjack": "Bûcheron",
+  "enchantment.overenchanted.lumberjack.desc": "Maintenez la touche Bûcheron pour abattre des arbres entiers d'un coup.",
+
+  "enchantment.overenchanted.echo_slayer": "Tueur d'Écho",
+  "enchantment.overenchanted.echo_slayer.desc": "Augmente les dégâts infligés au Gardien.",
+
+  "enchantment.overenchanted.sonic_boom_protection": "Protection Contre le Bang Sonique",
+  "enchantment.overenchanted.sonic_boom_protection.desc": "Réduit les dégâts du bang sonique du Gardien.",
+
+  "enchantment.overenchanted.deepfoot": "Pied Discret",
+  "enchantment.overenchanted.deepfoot.desc": "Empêche le Gardien de détecter le joueur.",
+
+  "enchantment.overenchanted.combo": "Combo",
+  "enchantment.overenchanted.combo.desc": "Augmente les dégâts avec chaque coup consécutif, se réinitialise si vous frappez dans le vide ou un bloc.",
+
+  "enchantment.overenchanted.multi_jump": "Saut Multiple",
+  "enchantment.overenchanted.multi_jump.desc": "Vous permet d'effectuer un saut supplémentaire dans les airs.",
+
+  "enchantment.overenchanted.reflect": "Réflexion",
+  "enchantment.overenchanted.reflect.desc": "Renvoie les flèches bloquées vers l'attaquant lorsqu'un bouclier est utilisé.",
+
+  "enchantment.overenchanted.ricochet": "Rebond",
+  "enchantment.overenchanted.ricochet.desc": "Les flèches rebondissent sur les murs lors de l'impact."
+}

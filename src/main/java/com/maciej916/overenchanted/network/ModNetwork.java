@@ -1,12 +1,8 @@
 package com.maciej916.overenchanted.network;
 
 import com.maciej916.overenchanted.Overenchanted;
-import com.maciej916.overenchanted.network.handler.EchoSightPayloadHandler;
-import com.maciej916.overenchanted.network.handler.LumberjackPayloadHandler;
-import com.maciej916.overenchanted.network.handler.MultiJumpPayloadHandler;
-import com.maciej916.overenchanted.network.payload.EchoSightPayload;
-import com.maciej916.overenchanted.network.payload.LumberjackPayload;
-import com.maciej916.overenchanted.network.payload.MultiJumpPayload;
+import com.maciej916.overenchanted.network.handler.*;
+import com.maciej916.overenchanted.network.payload.*;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
@@ -23,5 +19,8 @@ public class ModNetwork {
         registrar.playToServer(EchoSightPayload.TYPE, EchoSightPayload.STREAM_CODEC, EchoSightPayloadHandler::handleDataOnNetwork);
         registrar.playToServer(LumberjackPayload.TYPE, LumberjackPayload.STREAM_CODEC, LumberjackPayloadHandler::handleDataOnNetwork);
         registrar.playToServer(MultiJumpPayload.TYPE, MultiJumpPayload.STREAM_CODEC, MultiJumpPayloadHandler::handleDataOnNetwork);
+
+        registrar.playToClient(RicochetArrowPayload.TYPE, RicochetArrowPayload.STREAM_CODEC, RicochetArrowPayloadHandler::handleDataOnNetwork);
+        registrar.playToClient(ReflectArrowPayload.TYPE, ReflectArrowPayload.STREAM_CODEC, ReflectArrowPayloadHandler::handleDataOnNetwork);
     }
 }

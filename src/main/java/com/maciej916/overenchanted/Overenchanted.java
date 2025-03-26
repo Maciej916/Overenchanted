@@ -2,6 +2,7 @@ package com.maciej916.overenchanted;
 
 import com.maciej916.overenchanted.attribute.ModAttributes;
 import com.maciej916.overenchanted.block.ModBlocks;
+import com.maciej916.overenchanted.capability.ModCapabilities;
 import com.maciej916.overenchanted.data.ModDataAttachments;
 import com.maciej916.overenchanted.data.ModDataComponents;
 import com.maciej916.overenchanted.effect.ModEffects;

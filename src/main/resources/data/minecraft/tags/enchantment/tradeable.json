@@ -26,6 +26,8 @@
     "overenchanted:echo_slayer",
     "overenchanted:deepfoot",
     "enchantment.overenchanted.combo",
-    "enchantment.overenchanted.multi_jump"
+    "enchantment.overenchanted.multi_jump",
+    "overenchanted.reflect",
+    "overenchanted.ricochet"
   ]
 }

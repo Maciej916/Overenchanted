@@ -24,6 +24,7 @@ public class ModEnchantments {
     public static final ResourceKey<Enchantment> EXPLOSIVE_SHOT = create("explosive_shot");
     public static final ResourceKey<Enchantment> PARALYSIS = create("paralysis");
     public static final ResourceKey<Enchantment> QUICK_DRAW = create("quick_draw");
+    public static final ResourceKey<Enchantment> RICOCHET = create("ricochet");
 
     public static final ResourceKey<Enchantment> ENRAGED = create("enraged");
     public static final ResourceKey<Enchantment> BLAZING_WALKER = create("blazing_walker");
@@ -45,6 +46,8 @@ public class ModEnchantments {
 
     public static final ResourceKey<Enchantment> STUN = create("stun");
 
+    public static final ResourceKey<Enchantment> REFLECT = create("reflect");
+
     private static ResourceKey<Enchantment> create(String name) {
         return ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.fromNamespaceAndPath(Overenchanted.MOD_ID, name));
     }
@@ -65,6 +68,8 @@ public class ModEnchantments {
         register(context, EXPLOSIVE_SHOT, ExplosiveShotEnchantment.builder(context));
         register(context, PARALYSIS, ParalysisEnchantment.builder(context));
 //        register(context, QUICK_DRAW, QuickDrawEnchantment.builder(context));
+        register(context, RICOCHET, RicochetEnchantment.builder(context));
+
 
         register(context, ENRAGED, EnragedEnchantment.builder(context));
         register(context, BLAZING_WALKER, BlazingWalkerEnchantment.builder(context));
@@ -86,7 +91,7 @@ public class ModEnchantments {
 
         register(context, STUN, StunEnchantment.builder(context));
 
-
+        register(context, REFLECT, ReflectEnchantment.builder(context));
     }
 
     private static void register(BootstrapContext<Enchantment> registry, ResourceKey<Enchantment> key, Enchantment.Builder builder) {

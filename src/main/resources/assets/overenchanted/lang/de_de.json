@@ -1,0 +1,101 @@
+{
+  "painting.overenchanted.runes_colors.title": "Runen & Farben",
+  "painting.overenchanted.runes_colors.author": "Overenchanted",
+
+  "effect.overenchanted.stun": "Betäuben",
+
+  "key.categories.overenchanted": "Overenchanted",
+  "key.overenchanted.echo_sight": "Echo-Sicht Verzauberung nutzen",
+  "key.overenchanted.lumberjack": "Holzfäller-Verzauberungstaste",
+
+  "overenchanted.echo_sight_countdown": "Echo-Sicht Abklingzeit %s Sekunden",
+
+  "overenchanted.combo_lvl": "Kombination: %s",
+
+  "enchantment.overenchanted.blazing_edge": "Lodernde Schneide",
+  "enchantment.overenchanted.blazing_edge.desc": "Gewährt eine Chance, nahe Feinde bei einem Treffer zu entzünden.",
+
+  "enchantment.overenchanted.blazing_walker": "Lodernder Läufer",
+  "enchantment.overenchanted.blazing_walker.desc": "Ermöglicht sicheres Gehen auf Lava.",
+
+  "enchantment.overenchanted.breaking_curse": "Fluch des Brechens",
+  "enchantment.overenchanted.breaking_curse.desc": "Lässt den Gegenstand schneller durch Gebrauch zerbrechen.",
+
+  "enchantment.overenchanted.explosive_shot": "Explosiver Schuss",
+  "enchantment.overenchanted.explosive_shot.desc": "Erzeugt eine kleine Explosion, wenn ein Mob getroffen wird.",
+
+  "enchantment.overenchanted.enraged": "Wutentbrannt",
+  "enchantment.overenchanted.enraged.desc": "Erhöht den Angriffsschaden um +30 % und verringert die Rüstung um -20 % pro Stufe.",
+
+  "enchantment.overenchanted.eternal": "Ewig",
+  "enchantment.overenchanted.eternal.desc": "Verhindert, dass der Gegenstand verschwindet.",
+
+  "enchantment.overenchanted.floating": "Schweben",
+  "enchantment.overenchanted.floating.desc": "Lässt den Feind für kurze Zeit schweben.",
+
+  "enchantment.overenchanted.free_riding": "Freies Reiten",
+  "enchantment.overenchanted.free_riding.desc": "Verhindert Haltbarkeitsverlust und erhöht die Geschwindigkeit auf Schweinen oder Schreiter.",
+
+  "enchantment.overenchanted.ignorance_curse": "Fluch der Unwissenheit",
+  "enchantment.overenchanted.ignorance_curse.desc": "Mobs und abgebauter Blöcke lassen keine Erfahrung fallen.",
+
+  "enchantment.overenchanted.paralysis": "Paralyse",
+  "enchantment.overenchanted.paralysis.desc": "Lässt ein Mob für kurze Zeit bewegungsunfähig werden.",
+
+  "enchantment.overenchanted.reinforced_tip": "Verstärkte Spitze",
+  "enchantment.overenchanted.reinforced_tip.desc": "Erhöht die Geschwindigkeit beim Abbau härterer Materialien.",
+
+  "enchantment.overenchanted.fleetfoot": "Flinkfuß",
+  "enchantment.overenchanted.fleetfoot.desc": "Erhöht die Bewegungsgeschwindigkeit um +15 %, aber verringert die Rückstoßresistenz um -20 % pro Stufe.",
+
+  "enchantment.overenchanted.aqua_glide": "Wassergleiten",
+  "enchantment.overenchanted.aqua_glide.desc": "Erhöht die Schwimmgeschwindigkeit und gewährt den Delfineffekt, wenn du verletzt wirst.",
+
+  "enchantment.overenchanted.aqua_miner": "Wasserminenarbeiter",
+  "enchantment.overenchanted.aqua_miner.desc": "Erhöht die Abbaugeschwindigkeit, wenn du unter Wasser bist.",
+
+  "enchantment.overenchanted.high_step": "Hoher Schritt",
+  "enchantment.overenchanted.high_step.desc": "Erhöht die Schritthöhe.",
+
+  "enchantment.overenchanted.inefficiency_curse": "Fluch der Ineffizienz",
+  "enchantment.overenchanted.inefficiency_curse.desc": "Verringert die Abbaueffizienz.",
+
+  "enchantment.overenchanted.faster_attack": "Schneller Angriff",
+  "enchantment.overenchanted.faster_attack.desc": "Erhöht die Angriffsgeschwindigkeit.",
+
+  "enchantment.overenchanted.lifebinder": "Lebensbinder",
+  "enchantment.overenchanted.lifebinder.desc": "Angriffe auf Feinde haben eine Chance, Haustiere im Umkreis von 5 Blöcken zu heilen.",
+
+  "enchantment.overenchanted.stun": "Betäuben",
+  "enchantment.overenchanted.stun.desc": "Angriffe aus einer Höhe von über 2 Blöcken betäuben den Feind (ausgenommen Bosse).",
+
+  "enchantment.overenchanted.agony_curse": "Fluch des Schmerzes",
+  "enchantment.overenchanted.agony_curse.desc": "Verursacht starke Schmerzen, wenn ausgerüstet.",
+
+  "enchantment.overenchanted.echo_sight": "Echo-Sicht",
+  "enchantment.overenchanted.echo_sight.desc": "Enthüllt versteckte Ziele. Siehe Tastenbelegung zur Aktivierung.",
+
+  "enchantment.overenchanted.lumberjack": "Holzfäller",
+  "enchantment.overenchanted.lumberjack.desc": "Halte die Holzfällertaste gedrückt, um ganze Bäume auf einmal zu fällen.",
+
+  "enchantment.overenchanted.echo_slayer": "Echotöter",
+  "enchantment.overenchanted.echo_slayer.desc": "Erhöht den Schaden gegen den Wächter.",
+
+  "enchantment.overenchanted.sonic_boom_protection": "Schallwellen-Schutz",
+  "enchantment.overenchanted.sonic_boom_protection.desc": "Verringert den Schaden durch die Schallwellenattacke des Wächters.",
+
+  "enchantment.overenchanted.deepfoot": "Tiefenschritt",
+  "enchantment.overenchanted.deepfoot.desc": "Verhindert, dass der Wächter den Spieler erkennt.",
+
+  "enchantment.overenchanted.combo": "Kombination",
+  "enchantment.overenchanted.combo.desc": "Erhöht den Schaden bei aufeinanderfolgenden Treffern, setzt sich zurück, wenn du Luft oder einen Block triffst.",
+
+  "enchantment.overenchanted.multi_jump": "Mehrfachsprung",
+  "enchantment.overenchanted.multi_jump.desc": "Ermöglicht zusätzliche Sprünge in der Luft.",
+
+  "enchantment.overenchanted.reflect": "Reflexion",
+  "enchantment.overenchanted.reflect.desc": "Lenkt blockierte Pfeile zurück zum Angreifer, wenn ein Schild verwendet wird.",
+
+  "enchantment.overenchanted.ricochet": "Abprall",
+  "enchantment.overenchanted.ricochet.desc": "Pfeile prallen nach dem Aufprall von Wänden ab."
+}
