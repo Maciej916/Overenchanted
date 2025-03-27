@@ -5,6 +5,7 @@ import com.maciej916.overenchanted.enchantment.ModEnchantments;
 import com.maciej916.overenchanted.tag.ModTags;
 import com.maciej916.overenchanted.util.EnchantmentRarity;
 import com.maciej916.overenchanted.util.EnchantmentUtil;
+import com.maciej916.overenchanted.util.EntityUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.world.damagesource.DamageSource;
@@ -30,7 +31,7 @@ public class SonicBoomProtectionEnchantment {
         if (source.is(DamageTypes.SONIC_BOOM)) {
             if (entity instanceof Player player) {
                 int totalLevel = 0;
-                for (ItemStack itemStack : player.getArmorSlots()) {
+                for (ItemStack itemStack : EntityUtil.getArmorSlots(player)) {
                     int lvl = EnchantmentUtil.getEnchantmentLevel(player.level(), itemStack, ModEnchantments.SONIC_BOOM_PROTECTION);
                     totalLevel += lvl;
                 }

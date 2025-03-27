@@ -34,8 +34,8 @@ public class EchoSightPayloadHandler {
                             int duration = 20 * 4;
 
                             player.addEffect(new MobEffectInstance(MobEffects.DARKNESS, duration + 20, 0, false, false));
-                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, duration, 3, false, false));
-                            player.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, duration, 100, false, false));
+                            player.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, duration, 3, false, false));
+                            player.addEffect(new MobEffectInstance(MobEffects.MINING_FATIGUE, duration, 100, false, false));
 
                             serverLevel.playSound(null, player.getOnPos(), SoundEvents.WARDEN_SONIC_CHARGE, SoundSource.PLAYERS, 1.0F, 1.0F);
 

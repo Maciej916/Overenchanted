@@ -18,8 +18,8 @@ public record ParalysisEffect() implements EnchantmentEntityEffect {
         if (entity instanceof LivingEntity) {
             LivingEntity livingEntity = (LivingEntity) entity;
 
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, enchantmentLevel * 20, 100, false, true));
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, enchantmentLevel * 20, 100, false, true));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, enchantmentLevel * 20, 100, false, true));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.MINING_FATIGUE, enchantmentLevel * 20, 100, false, true));
             livingEntity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, enchantmentLevel * 20, 100, false, true));
         }
     }

@@ -66,11 +66,11 @@ public class RicochetArrowCapability implements IRicochetArrowCapability {
 
     @Override
     public void deserializeNBT(HolderLookup.Provider provider, CompoundTag compoundTag) {
-        entityId = compoundTag.getInt("entityId");
-        bouncesLeft = compoundTag.getInt("bouncesLeft");
-        motion = new Vec3(compoundTag.getDouble("motionX"), compoundTag.getDouble("motionY"), compoundTag.getDouble("motionZ"));
-        yRot = compoundTag.getFloat("yRot");
-        xRot = compoundTag.getFloat("xRot");
+        entityId = compoundTag.getIntOr("entityId", 0);
+        bouncesLeft = compoundTag.getIntOr("bouncesLeft", 0);
+        motion = new Vec3(compoundTag.getDoubleOr("motionX", 0), compoundTag.getDoubleOr("motionY", 0), compoundTag.getDoubleOr("motionZ", 0));
+        yRot = compoundTag.getFloatOr("yRot", 0);
+        xRot = compoundTag.getFloatOr("xRot", 0);
     }
 
     @Override

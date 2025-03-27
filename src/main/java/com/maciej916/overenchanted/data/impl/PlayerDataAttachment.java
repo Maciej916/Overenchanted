@@ -80,6 +80,6 @@ public class PlayerDataAttachment implements IPlayerDataAttachment {
 
     @Override
     public void deserializeNBT(HolderLookup.Provider provider, CompoundTag compoundTag) {
-        revealCountdown = compoundTag.getInt("revealCountdown");
+        revealCountdown = compoundTag.getIntOr("revealCountdown", 0);
     }
 }
