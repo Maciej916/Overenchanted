@@ -1,0 +1,101 @@
+{
+  "painting.overenchanted.runes_colors.title": "Runy i Kolory",
+  "painting.overenchanted.runes_colors.author": "Overenchanted",
+
+  "effect.overenchanted.stun": "Ogłuszenie",
+
+  "key.categories.overenchanted": "Overenchanted",
+  "key.overenchanted.echo_sight": "Użycie Zaklęcia Echa Widzenia",
+  "key.overenchanted.lumberjack": "Przycisk Zaklęcia Drwala",
+
+  "overenchanted.echo_sight_countdown": "Odnowienie Echa Widzenia %s sekund",
+
+  "overenchanted.combo_lvl": "Kombinacja: %s",
+
+  "enchantment.overenchanted.blazing_edge": "Płonąca Krawędź",
+  "enchantment.overenchanted.blazing_edge.desc": "Daje szansę na podpalenie pobliskich wrogów po trafieniu.",
+
+  "enchantment.overenchanted.blazing_walker": "Płonący Chód",
+  "enchantment.overenchanted.blazing_walker.desc": "Pozwala bezpiecznie chodzić po lawie.",
+
+  "enchantment.overenchanted.breaking_curse": "Klątwa Łamania",
+  "enchantment.overenchanted.breaking_curse.desc": "Powoduje szybsze niszczenie przedmiotu przy użyciu.",
+
+  "enchantment.overenchanted.explosive_shot": "Wybuchowy Strzał",
+  "enchantment.overenchanted.explosive_shot.desc": "Tworzy małą eksplozję po trafieniu wroga.",
+
+  "enchantment.overenchanted.enraged": "Wściekłość",
+  "enchantment.overenchanted.enraged.desc": "Zwiększa obrażenia o +30% i zmniejsza pancerz o -20% na poziom.",
+
+  "enchantment.overenchanted.eternal": "Wieczność",
+  "enchantment.overenchanted.eternal.desc": "Zapobiega despawnowaniu przedmiotu.",
+
+  "enchantment.overenchanted.floating": "Unoszenie",
+  "enchantment.overenchanted.floating.desc": "Powoduje, że wróg unosi się przez krótki czas.",
+
+  "enchantment.overenchanted.free_riding": "Darmowa Jazda",
+  "enchantment.overenchanted.free_riding.desc": "Zapobiega zużyciu trwałości podczas przyspieszania na świni lub striderze.",
+
+  "enchantment.overenchanted.ignorance_curse": "Klątwa Ignorancji",
+  "enchantment.overenchanted.ignorance_curse.desc": "Moby i wydobywane bloki nie upuszczają doświadczenia.",
+
+  "enchantment.overenchanted.paralysis": "Paraliż",
+  "enchantment.overenchanted.paralysis.desc": "Powoduje paraliż u wroga, uniemożliwiając mu poruszanie się, skakanie lub atakowanie przez krótki czas.",
+
+  "enchantment.overenchanted.reinforced_tip": "Wzmocniona Końcówka",
+  "enchantment.overenchanted.reinforced_tip.desc": "Zwiększa prędkość niszczenia twardszych materiałów.",
+
+  "enchantment.overenchanted.fleetfoot": "Szybka Stopa",
+  "enchantment.overenchanted.fleetfoot.desc": "Zwiększa prędkość poruszania się o +15%, ale zmniejsza odporność na odrzut o -20% na poziom.",
+
+  "enchantment.overenchanted.aqua_glide": "Wodny Ślizg",
+  "enchantment.overenchanted.aqua_glide.desc": "Zwiększa prędkość pływania i daje efekt delfina po otrzymaniu obrażeń.",
+
+  "enchantment.overenchanted.aqua_miner": "Górnik Wodny",
+  "enchantment.overenchanted.aqua_miner.desc": "Zwiększa prędkość wydobycia podczas zanurzenia w wodzie.",
+
+  "enchantment.overenchanted.high_step": "Wysoki Krok",
+  "enchantment.overenchanted.high_step.desc": "Zwiększa wysokość kroku.",
+
+  "enchantment.overenchanted.inefficiency_curse": "Klątwa Niewydajności",
+  "enchantment.overenchanted.inefficiency_curse.desc": "Zmniejsza efektywność wydobycia.",
+
+  "enchantment.overenchanted.faster_attack": "Szybszy Atak",
+  "enchantment.overenchanted.faster_attack.desc": "Zwiększa szybkość ataku.",
+
+  "enchantment.overenchanted.lifebinder": "Więzy Życia",
+  "enchantment.overenchanted.lifebinder.desc": "Atakowanie wroga ma szansę na leczenie oswojonych zwierząt w promieniu 5 bloków.",
+
+  "enchantment.overenchanted.stun": "Ogłuszenie",
+  "enchantment.overenchanted.stun.desc": "Atakowanie podczas spadania z ponad 2 bloków ogłusza wroga (z wyjątkiem bossów).",
+
+  "enchantment.overenchanted.agony_curse": "Klątwa Agonii",
+  "enchantment.overenchanted.agony_curse.desc": "Powoduje silny ból po założeniu.",
+
+  "enchantment.overenchanted.echo_sight": "Echo Widzenia",
+  "enchantment.overenchanted.echo_sight.desc": "Ujawnia ukryte cele. Sprawdź przypisanie klawiszy, aby aktywować.",
+
+  "enchantment.overenchanted.lumberjack": "Drwal",
+  "enchantment.overenchanted.lumberjack.desc": "Przytrzymaj przycisk Drwala, aby ściąć całe drzewo naraz.",
+
+  "enchantment.overenchanted.echo_slayer": "Pogromca Echa",
+  "enchantment.overenchanted.echo_slayer.desc": "Zwiększa obrażenia zadawane Wardenowi.",
+
+  "enchantment.overenchanted.sonic_boom_protection": "Ochrona przed Sonicznym Wybuchem",
+  "enchantment.overenchanted.sonic_boom_protection.desc": "Zmniejsza obrażenia od sonicznego wybuchu Wardena.",
+
+  "enchantment.overenchanted.deepfoot": "Cisza Kroku",
+  "enchantment.overenchanted.deepfoot.desc": "Zapobiega wykryciu przez Wardena.",
+
+  "enchantment.overenchanted.combo": "Kombinacja",
+  "enchantment.overenchanted.combo.desc": "Zwiększa obrażenia przy każdym kolejnym trafieniu, resetuje się po uderzeniu w powietrze lub blok.",
+
+  "enchantment.overenchanted.multi_jump": "Wieloskok",
+  "enchantment.overenchanted.multi_jump.desc": "Pozwala na wykonanie dodatkowego skoku w powietrzu.",
+
+  "enchantment.overenchanted.reflect": "Odbicie",
+  "enchantment.overenchanted.reflect.desc": "Kieruje zablokowane strzały z powrotem do atakującego, gdy używasz tarczy.",
+
+  "enchantment.overenchanted.ricochet": "Rykoszet",
+  "enchantment.overenchanted.ricochet.desc": "Strzały odbijają się od ścian po uderzeniu."
+}

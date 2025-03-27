@@ -91,5 +91,11 @@
   "enchantment.overenchanted.combo.desc": "Increases damage with each consecutive strike, resetting if you hit air or a block.",
 
   "enchantment.overenchanted.multi_jump": "Multi Jump",
-  "enchantment.overenchanted.multi_jump.desc": "Allows you to perform additional jump in the air."
+  "enchantment.overenchanted.multi_jump.desc": "Allows you to perform additional jump in the air.",
+
+  "enchantment.overenchanted.reflect": "Reflect",
+  "enchantment.overenchanted.reflect.desc": "Redirects blocked arrows back to the attacker when using a shield.",
+
+  "enchantment.overenchanted.ricochet": "Ricochet",
+  "enchantment.overenchanted.ricochet.desc": "Arrows bounce off walls upon impact."
 }

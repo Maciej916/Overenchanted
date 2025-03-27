@@ -32,6 +32,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.ECHO_SLAYER)
                 .add(ModEnchantments.COMBO)
                 .add(ModEnchantments.MULTI_JUMP)
+                .add(ModEnchantments.REFLECT)
+                .add(ModEnchantments.RICOCHET)
         ;
 
         tag(EnchantmentTags.CURSE)
@@ -50,6 +52,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.AGONY_CURSE)
                 .add(ModEnchantments.LUMBERJACK)
                 .add(ModEnchantments.SONIC_BOOM_PROTECTION)
+                .add(ModEnchantments.REFLECT)
+                .add(ModEnchantments.RICOCHET)
         ;
 
         tag(EnchantmentTags.ON_RANDOM_LOOT)
@@ -64,6 +68,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.EXPLOSIVE_SHOT)
                 .add(ModEnchantments.AGONY_CURSE)
                 .add(ModEnchantments.LUMBERJACK)
+                .add(ModEnchantments.REFLECT)
+                .add(ModEnchantments.RICOCHET)
         ;
 
         tag(EnchantmentTags.TRADEABLE)
@@ -94,6 +100,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.DEEPFOOT)
                 .add(ModEnchantments.COMBO)
                 .add(ModEnchantments.MULTI_JUMP)
+                .add(ModEnchantments.REFLECT)
+                .add(ModEnchantments.RICOCHET)
         ;
 
         tag(EnchantmentTags.TREASURE)

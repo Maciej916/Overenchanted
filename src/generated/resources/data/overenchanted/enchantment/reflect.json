@@ -1,0 +1,20 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.overenchanted.reflect"
+  },
+  "max_cost": {
+    "base": 18,
+    "per_level_above_first": 10
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 2,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#overenchanted:enchantable/reflect",
+  "weight": 10
+}

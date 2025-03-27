@@ -1,0 +1,101 @@
+{
+  "painting.overenchanted.runes_colors.title": "Руны и Цвета",
+  "painting.overenchanted.runes_colors.author": "Overenchanted",
+
+  "effect.overenchanted.stun": "Оглушение",
+
+  "key.categories.overenchanted": "Overenchanted",
+  "key.overenchanted.echo_sight": "Использование чар Зрячего Эха",
+  "key.overenchanted.lumberjack": "Кнопка Чар Лесоруба",
+
+  "overenchanted.echo_sight_countdown": "Перезарядка Зрячего Эха %s секунд",
+
+  "overenchanted.combo_lvl": "Комбо: %s",
+
+  "enchantment.overenchanted.blazing_edge": "Пылающий Клинок",
+  "enchantment.overenchanted.blazing_edge.desc": "Даёт шанс поджечь ближайших врагов при ударе.",
+
+  "enchantment.overenchanted.blazing_walker": "Пылающий Странник",
+  "enchantment.overenchanted.blazing_walker.desc": "Позволяет безопасно ходить по лаве.",
+
+  "enchantment.overenchanted.breaking_curse": "Проклятие Ломкости",
+  "enchantment.overenchanted.breaking_curse.desc": "Заставляет предмет ломаться быстрее при использовании.",
+
+  "enchantment.overenchanted.explosive_shot": "Взрывной Выстрел",
+  "enchantment.overenchanted.explosive_shot.desc": "Создаёт небольшой взрыв при попадании во врага.",
+
+  "enchantment.overenchanted.enraged": "Ярость",
+  "enchantment.overenchanted.enraged.desc": "Увеличивает урон на +30% и снижает броню на -20% за уровень.",
+
+  "enchantment.overenchanted.eternal": "Вечность",
+  "enchantment.overenchanted.eternal.desc": "Предотвращает исчезновение предмета.",
+
+  "enchantment.overenchanted.floating": "Парение",
+  "enchantment.overenchanted.floating.desc": "Заставляет врага парить в воздухе на короткое время.",
+
+  "enchantment.overenchanted.free_riding": "Вольная Поездка",
+  "enchantment.overenchanted.free_riding.desc": "Предотвращает уменьшение прочности и увеличивает скорость на свинье или страйдере.",
+
+  "enchantment.overenchanted.ignorance_curse": "Проклятие Невежества",
+  "enchantment.overenchanted.ignorance_curse.desc": "Мобы и добытые блоки не будут давать опыт.",
+
+  "enchantment.overenchanted.paralysis": "Паралич",
+  "enchantment.overenchanted.paralysis.desc": "Накладывает паралич на моба, мешая ему двигаться, прыгать и атаковать на короткое время.",
+
+  "enchantment.overenchanted.reinforced_tip": "Укреплённый Наконечник",
+  "enchantment.overenchanted.reinforced_tip.desc": "Увеличивает скорость добычи твёрдых материалов.",
+
+  "enchantment.overenchanted.fleetfoot": "Быстроход",
+  "enchantment.overenchanted.fleetfoot.desc": "Увеличивает скорость передвижения на +15%, но снижает сопротивление к отбрасыванию на -20% за уровень.",
+
+  "enchantment.overenchanted.aqua_glide": "Водное Скольжение",
+  "enchantment.overenchanted.aqua_glide.desc": "Увеличивает скорость плавания и даёт эффект дельфина при ранении.",
+
+  "enchantment.overenchanted.aqua_miner": "Водный Шахтёр",
+  "enchantment.overenchanted.aqua_miner.desc": "Увеличивает скорость добычи под водой.",
+
+  "enchantment.overenchanted.high_step": "Высокий Шаг",
+  "enchantment.overenchanted.high_step.desc": "Увеличивает высоту шага.",
+
+  "enchantment.overenchanted.inefficiency_curse": "Проклятие Неэффективности",
+  "enchantment.overenchanted.inefficiency_curse.desc": "Снижает эффективность добычи.",
+
+  "enchantment.overenchanted.faster_attack": "Быстрая Атака",
+  "enchantment.overenchanted.faster_attack.desc": "Увеличивает скорость атаки.",
+
+  "enchantment.overenchanted.lifebinder": "Связь Жизни",
+  "enchantment.overenchanted.lifebinder.desc": "Атака врага имеет шанс исцелить ваших питомцев в радиусе 5 блоков.",
+
+  "enchantment.overenchanted.stun": "Оглушение",
+  "enchantment.overenchanted.stun.desc": "Атака при падении с высоты более 2 блоков оглушает врага (кроме боссов).",
+
+  "enchantment.overenchanted.agony_curse": "Проклятие Агонии",
+  "enchantment.overenchanted.agony_curse.desc": "Наносит сильную боль при использовании.",
+
+  "enchantment.overenchanted.echo_sight": "Зрячее Эхо",
+  "enchantment.overenchanted.echo_sight.desc": "Раскрывает скрытые цели. Проверьте настройки клавиш для активации.",
+
+  "enchantment.overenchanted.lumberjack": "Лесоруб",
+  "enchantment.overenchanted.lumberjack.desc": "Удерживайте клавишу Лесоруба, чтобы срубить всё дерево сразу.",
+
+  "enchantment.overenchanted.echo_slayer": "Палач Эха",
+  "enchantment.overenchanted.echo_slayer.desc": "Увеличивает урон по Хранителю.",
+
+  "enchantment.overenchanted.sonic_boom_protection": "Защита от Звукового Удара",
+  "enchantment.overenchanted.sonic_boom_protection.desc": "Снижает урон от звуковой атаки Хранителя.",
+
+  "enchantment.overenchanted.deepfoot": "Тихий Шаг",
+  "enchantment.overenchanted.deepfoot.desc": "Предотвращает обнаружение игрока Хранителем.",
+
+  "enchantment.overenchanted.combo": "Комбо",
+  "enchantment.overenchanted.combo.desc": "Увеличивает урон с каждым последовательным ударом, сбрасывается при ударе в воздух или блок.",
+
+  "enchantment.overenchanted.multi_jump": "Множественный Прыжок",
+  "enchantment.overenchanted.multi_jump.desc": "Позволяет выполнять дополнительные прыжки в воздухе.",
+
+  "enchantment.overenchanted.reflect": "Отражение",
+  "enchantment.overenchanted.reflect.desc": "Отражает заблокированные стрелы обратно в атакующего при использовании щита.",
+
+  "enchantment.overenchanted.ricochet": "Рикошет",
+  "enchantment.overenchanted.ricochet.desc": "Стрелы отскакивают от стен при столкновении."
+}

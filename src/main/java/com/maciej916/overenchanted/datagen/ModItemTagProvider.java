@@ -56,6 +56,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ModTags.Items.SONIC_BOOM_ENCHANTABLE)
                 .addTag(ModTags.Items.commonTag("armors"))
         ;
+
+        tag(ModTags.Items.REFLECT_ENCHANTABLE)
+                .addTag(ModTags.Items.commonTag("tools/shield"))
+        ;
     }
 }
 

@@ -42,7 +42,7 @@ public class ModTags {
         public static final TagKey<Item> ECHO_SIGHT_ENCHANTABLE = tag("enchantable/echo_sight");
         public static final TagKey<Item> LUMBERJACK_ENCHANTABLE = tag("enchantable/lumberjack");
         public static final TagKey<Item> SONIC_BOOM_ENCHANTABLE = tag("enchantable/sonic_boom");
-
+        public static final TagKey<Item> REFLECT_ENCHANTABLE = tag("enchantable/reflect");
 
 
         public static TagKey<Item> tag(String name) {
