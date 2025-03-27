@@ -1,7 +1,8 @@
 package com.maciej916.overenchanted.enchantment.impl;
 
 import com.maciej916.overenchanted.Overenchanted;
-import com.maciej916.overenchanted.capability.ModCapabilities;
+import com.maciej916.overenchanted.data.ModDataAttachments;
+import com.maciej916.overenchanted.data.impl.PlayerDataAttachment;
 import com.maciej916.overenchanted.enchantment.ModEnchantments;
 import com.maciej916.overenchanted.tag.ModTags;
 import com.maciej916.overenchanted.util.EnchantmentRarity;
@@ -40,17 +41,19 @@ public class LumberjackEnchantment {
     private static void execute(BlockEvent.BreakEvent event, BlockState blockState, BlockPos pos, Player player) {
         if (blockState.is(ModTags.Blocks.LUMBERJACK_BLOCKS)) {
             ItemStack stack = player.getItemInHand(player.getUsedItemHand());
-
             int lvl = EnchantmentUtil.getEnchantmentLevel(player.level(), stack, ModEnchantments.LUMBERJACK);
-            var capability = player.getCapability(ModCapabilities.OVERENCHANTED_PLAYER);
 
-            if (lvl > 0 && capability != null && capability.isLumberjackActive()) {
-                Level level = player.level();
-                Set<BlockPos> treeBlocks = findTree(level, pos, blockState);
+            if (lvl > 0 && player.hasData(ModDataAttachments.PLAYER_DATA)) {
+                PlayerDataAttachment playerDataAttachment = player.getData(ModDataAttachments.PLAYER_DATA);
 
-                if (treeBlocks.size() <= MAX_TREE_SIZE) {
-                    doBreak(player, level, pos, treeBlocks, stack);
-                    event.setCanceled(true);
+                if (playerDataAttachment.isLumberjackActive()) {
+                    Level level = player.level();
+                    Set<BlockPos> treeBlocks = findTree(level, pos, blockState);
+
+                    if (treeBlocks.size() <= MAX_TREE_SIZE) {
+                        doBreak(player, level, pos, treeBlocks, stack);
+                        event.setCanceled(true);
+                    }
                 }
             }
         }

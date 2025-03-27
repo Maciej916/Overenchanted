@@ -13,6 +13,7 @@ public class ModEnchantments {
     public static final ResourceKey<Enchantment> FASTER_ATTACK = create("faster_attack");
     public static final ResourceKey<Enchantment> LIFEBINDER = create("lifebinder");
     public static final ResourceKey<Enchantment> ECHO_SLAYER = create("echo_slayer");
+    public static final ResourceKey<Enchantment> COMBO = create("combo");
 
     public static final ResourceKey<Enchantment> REINFORCED_TIP = create("reinforced_tip");
     public static final ResourceKey<Enchantment> LUMBERJACK = create("lumberjack");
@@ -33,6 +34,7 @@ public class ModEnchantments {
     public static final ResourceKey<Enchantment> ECHO_SIGHT = create("echo_sight");
     public static final ResourceKey<Enchantment> SONIC_BOOM_PROTECTION = create("sonic_boom_protection");
     public static final ResourceKey<Enchantment> DEEPFOOT = create("deepfoot");
+    public static final ResourceKey<Enchantment> MULTI_JUMP = create("multi_jump");
 
     public static final ResourceKey<Enchantment> ETERNAL = create("eternal");
 
@@ -52,6 +54,7 @@ public class ModEnchantments {
         register(context, FASTER_ATTACK, FasterAttackEnchantment.builder(context));
         register(context, LIFEBINDER, LifebinderEnchantment.builder(context));
         register(context, ECHO_SLAYER, EchoSlayerEnchantment.builder(context));
+        register(context, COMBO, ComboEnchantment.builder(context));
 
         register(context, REINFORCED_TIP, ReinforcedTipEnchantment.builder(context));
         register(context, LUMBERJACK, LumberjackEnchantment.builder(context));
@@ -72,6 +75,7 @@ public class ModEnchantments {
         register(context, ECHO_SIGHT, EchoSightEnchantment.builder(context));
         register(context, SONIC_BOOM_PROTECTION, SonicBoomProtectionEnchantment.builder(context));
         register(context, DEEPFOOT, DeepfootEnchantment.builder(context));
+        register(context, MULTI_JUMP, MultiJumpEnchantment.builder(context));
 
         register(context, BREAKING_CURSE, BreakingEnchantment.builder(context));
         register(context, INEFFICIENCY_CURSE, InefficiencyEnchantment.builder(context));

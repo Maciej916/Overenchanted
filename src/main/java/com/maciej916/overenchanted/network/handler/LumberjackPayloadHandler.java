@@ -1,7 +1,7 @@
 package com.maciej916.overenchanted.network.handler;
 
 import com.maciej916.overenchanted.Overenchanted;
-import com.maciej916.overenchanted.capability.ModCapabilities;
+import com.maciej916.overenchanted.data.ModDataAttachments;
 import com.maciej916.overenchanted.network.payload.LumberjackPayload;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
@@ -12,9 +12,9 @@ public class LumberjackPayloadHandler {
     public static void handleDataOnNetwork(final LumberjackPayload data, final IPayloadContext context) {
         context.enqueueWork(() -> {
             Player player = context.player();
-            var capability = player.getCapability(ModCapabilities.OVERENCHANTED_PLAYER);
-            if (capability != null) {
-                capability.setLumberjackActive(data.isDown());
+
+            if (player.hasData(ModDataAttachments.PLAYER_DATA)) {
+                player.getData(ModDataAttachments.PLAYER_DATA).setLumberjackActive(data.isDown());
             }
         })
         .exceptionally(e -> {

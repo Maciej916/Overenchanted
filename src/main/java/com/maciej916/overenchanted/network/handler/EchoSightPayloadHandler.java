@@ -1,8 +1,8 @@
 package com.maciej916.overenchanted.network.handler;
 
 import com.maciej916.overenchanted.Overenchanted;
-import com.maciej916.overenchanted.capability.ModCapabilities;
-import com.maciej916.overenchanted.capability.impl.ScheduledTask;
+import com.maciej916.overenchanted.data.ModDataAttachments;
+import com.maciej916.overenchanted.data.impl.PlayerDataAttachment;
 import com.maciej916.overenchanted.network.payload.EchoSightPayload;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.ParticleTypes;
@@ -22,47 +22,48 @@ public class EchoSightPayloadHandler {
 
     public static void handleDataOnNetwork(final EchoSightPayload data, final IPayloadContext context) {
         context.enqueueWork(() -> {
-            Player player = context.player();
-            var capability = player.getCapability(ModCapabilities.OVERENCHANTED_PLAYER);
-            if (capability != null) {
-                if (capability.getRevealCountdown() > 0) {
-                    player.displayClientMessage(Component.translatable(Overenchanted.MOD_ID + ".echo_sight_countdown", Component.literal("" + capability.getRevealCountdown())).withStyle(ChatFormatting.RED), true);
-                } else {
-                    ServerLevel serverLevel = (ServerLevel) player.level();
-                    int duration = 20 * 4;
+                    Player player = context.player();
 
-                    player.addEffect(new MobEffectInstance(MobEffects.DARKNESS, duration + 20, 0, false, false));
-                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, duration, 3, false, false));
-                    player.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, duration, 100, false, false));
+                    if (player.hasData(ModDataAttachments.PLAYER_DATA)) {
+                        PlayerDataAttachment playerDataAttachment = player.getData(ModDataAttachments.PLAYER_DATA);
 
-                    serverLevel.playSound(null, player.getOnPos(), SoundEvents.WARDEN_SONIC_CHARGE, SoundSource.PLAYERS, 1.0F, 1.0F);
+                        if (playerDataAttachment.getRevealCountdown() > 0) {
+                            player.displayClientMessage(Component.translatable(Overenchanted.MOD_ID + ".echo_sight_countdown", Component.literal("" + playerDataAttachment.getRevealCountdown())).withStyle(ChatFormatting.RED), true);
+                        } else {
+                            ServerLevel serverLevel = (ServerLevel) player.level();
+                            int duration = 20 * 4;
 
-                    capability.scheduleTask(
-                            new ScheduledTask(
-                                    serverLevel.getServer().getTickCount() + 20 * 4,
-                                    () -> {
-                                        spawnRevealParticles(serverLevel, player);
-                                        serverLevel.playSound(null, player.getOnPos(), SoundEvents.WARDEN_SONIC_BOOM, SoundSource.PLAYERS, 1.0F, 1.0F);
+                            player.addEffect(new MobEffectInstance(MobEffects.DARKNESS, duration + 20, 0, false, false));
+                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, duration, 3, false, false));
+                            player.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, duration, 100, false, false));
 
-                                        int RANGE = 15 * data.level();
-                                        List<Monster> nearbyEntities = serverLevel.getEntitiesOfClass(Monster.class, player.getBoundingBox().inflate(RANGE));
-                                        for (Monster nearbyEntity : nearbyEntities) {
-                                            nearbyEntity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 20 * 10, 100, false, false));
-                                        }
-                                    }
-                            )
-                    );
+                            serverLevel.playSound(null, player.getOnPos(), SoundEvents.WARDEN_SONIC_CHARGE, SoundSource.PLAYERS, 1.0F, 1.0F);
 
-                    capability.setRevealCountdown(30);
-                }
-            }
-        })
-        .exceptionally(e -> {
-            context.disconnect(Component.translatable(Overenchanted.MOD_ID + ".networking.failed", e.getMessage()));
-            return null;
-        });
+                            playerDataAttachment.scheduleTask(
+                                    new com.maciej916.overenchanted.data.impl.ScheduledTask(
+                                            serverLevel.getServer().getTickCount() + 20 * 4,
+                                            () -> {
+                                                spawnRevealParticles(serverLevel, player);
+                                                serverLevel.playSound(null, player.getOnPos(), SoundEvents.WARDEN_SONIC_BOOM, SoundSource.PLAYERS, 1.0F, 1.0F);
+
+                                                int RANGE = 15 * data.level();
+                                                List<Monster> nearbyEntities = serverLevel.getEntitiesOfClass(Monster.class, player.getBoundingBox().inflate(RANGE));
+                                                for (Monster nearbyEntity : nearbyEntities) {
+                                                    nearbyEntity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 20 * 10, 100, false, false));
+                                                }
+                                            }
+                                    )
+                            );
+
+                            playerDataAttachment.setRevealCountdown(30);
+                        }
+                    }
+                })
+                .exceptionally(e -> {
+                    context.disconnect(Component.translatable(Overenchanted.MOD_ID + ".networking.failed", e.getMessage()));
+                    return null;
+                });
     }
-
     private static void spawnRevealParticles(ServerLevel serverLevel, Player player) {
         double d0 = serverLevel.random.nextGaussian() * 0.02;
         double d1 = serverLevel.random.nextGaussian() * 0.02;

@@ -2,9 +2,14 @@ package com.maciej916.overenchanted;
 
 import com.maciej916.overenchanted.attribute.ModAttributes;
 import com.maciej916.overenchanted.block.ModBlocks;
+import com.maciej916.overenchanted.data.ModDataAttachments;
+import com.maciej916.overenchanted.data.ModDataComponents;
 import com.maciej916.overenchanted.effect.ModEffects;
 import com.maciej916.overenchanted.enchantment.ModEnchantmentEffects;
 import com.maciej916.overenchanted.item.ModItems;
+import com.maciej916.overenchanted.particle.ModParticles;
+import com.maciej916.overenchanted.particle.impl.ComboParticles;
+import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -42,6 +47,9 @@ public class Overenchanted {
         ModEffects.register(modEventBus);
         ModAttributes.register(modEventBus);
         ModEnchantmentEffects.register(modEventBus);
+        ModDataAttachments.register(modEventBus);
+        ModDataComponents.register(modEventBus);
+        ModParticles.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -62,6 +70,11 @@ public class Overenchanted {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
+        }
+
+        @SubscribeEvent
+        public static void registerParticleFactories(RegisterParticleProvidersEvent event) {
+            event.registerSpriteSet(ModParticles.COMBO_PARTICLES.get(), ComboParticles.Provider::new);
         }
     }
 }

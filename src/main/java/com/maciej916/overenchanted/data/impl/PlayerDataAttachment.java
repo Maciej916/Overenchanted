@@ -1,15 +1,14 @@
-package com.maciej916.overenchanted.capability.impl;
+package com.maciej916.overenchanted.data.impl;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
-import net.neoforged.neoforge.common.util.INBTSerializable;
 import org.jetbrains.annotations.UnknownNullability;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class OPlayerCapability implements IOPlayerCapability, INBTSerializable<CompoundTag> {
+public class PlayerDataAttachment implements IPlayerDataAttachment {
     private final List<ScheduledTask> scheduledTasks = new LinkedList<>();
 
     private int currentTick = 0;

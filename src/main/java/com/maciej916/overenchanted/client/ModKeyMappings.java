@@ -24,6 +24,4 @@ public class ModKeyMappings {
         event.register(KEY_ECHO_SIGHT);
         event.register(KEY_LUMBERJACK);
     }
-
-
 }

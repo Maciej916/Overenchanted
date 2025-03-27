@@ -1,4 +1,4 @@
-package com.maciej916.overenchanted.capability.impl;
+package com.maciej916.overenchanted.data.impl;
 
 public class ScheduledTask implements Runnable {
     private final Runnable runnable;

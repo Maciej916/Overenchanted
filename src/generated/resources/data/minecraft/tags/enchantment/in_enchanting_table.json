@@ -11,6 +11,8 @@
     "overenchanted:stun",
     "overenchanted:lumberjack",
     "overenchanted:sonic_boom_protection",
-    "overenchanted:echo_slayer"
+    "overenchanted:echo_slayer",
+    "overenchanted:combo",
+    "overenchanted:multi_jump"
   ]
 }
