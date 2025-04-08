@@ -22,5 +22,6 @@ public class ModNetwork {
 
         registrar.playToClient(RicochetArrowPayload.TYPE, RicochetArrowPayload.STREAM_CODEC, RicochetArrowPayloadHandler::handleDataOnNetwork);
         registrar.playToClient(ReflectArrowPayload.TYPE, ReflectArrowPayload.STREAM_CODEC, ReflectArrowPayloadHandler::handleDataOnNetwork);
+        registrar.playToClient(TrueShotArrowPayload.TYPE, TrueShotArrowPayload.STREAM_CODEC, TrueShotArrowPayloadHandler::handleDataOnNetwork);
     }
 }

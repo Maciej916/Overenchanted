@@ -1,0 +1,128 @@
+{
+  "painting.overenchanted.runes_colors.title": "ルーンと色彩",
+  "painting.overenchanted.runes_colors.author": "Overenchanted",
+
+  "effect.overenchanted.stun": "スタン",
+
+  "key.categories.overenchanted": "Overenchanted",
+  "key.overenchanted.echo_sight": "エコーサイトエンチャント使用",
+  "key.overenchanted.lumberjack": "ランバージャックエンチャントボタン",
+
+  "overenchanted.echo_sight_countdown": "エコーサイト クールダウン %s 秒",
+
+  "overenchanted.combo_lvl": "コンボ: %s",
+
+  "enchantment.overenchanted.blazing_edge": "ブレイジングエッジ",
+  "enchantment.overenchanted.blazing_edge.desc": "攻撃時に近くの敵を炎上させるチャンスを得る。",
+
+  "enchantment.overenchanted.blazing_walker": "ブレイジングウォーカー",
+  "enchantment.overenchanted.blazing_walker.desc": "溶岩の上を安全に歩くことができる。",
+
+  "enchantment.overenchanted.breaking_curse": "破損の呪い",
+  "enchantment.overenchanted.breaking_curse.desc": "使用することでアイテムが通常より早く壊れる。",
+
+  "enchantment.overenchanted.explosive_shot": "エクスプローシブショット",
+  "enchantment.overenchanted.explosive_shot.desc": "モブに命中時、小さな爆発を引き起こす。",
+
+  "enchantment.overenchanted.enraged": "激怒",
+  "enchantment.overenchanted.enraged.desc": "攻撃力がレベルごとに+30%増加し、防具値が-20%減少する。",
+
+  "enchantment.overenchanted.eternal": "エターナル",
+  "enchantment.overenchanted.eternal.desc": "アイテムが消滅するのを防ぐ。",
+
+  "enchantment.overenchanted.floating": "フローティング",
+  "enchantment.overenchanted.floating.desc": "敵を短時間浮遊させる。",
+
+  "enchantment.overenchanted.free_riding": "フリーライディング",
+  "enchantment.overenchanted.free_riding.desc": "豚やストライダーに乗っている間、耐久度の減少を防ぎ、速度を向上させる。",
+
+  "enchantment.overenchanted.ignorance_curse": "無知の呪い",
+  "enchantment.overenchanted.ignorance_curse.desc": "モブや採掘したブロックが経験値をドロップしなくなる。",
+
+  "enchantment.overenchanted.paralysis": "麻痺",
+  "enchantment.overenchanted.paralysis.desc": "モブに麻痺を適用し、短時間移動、ジャンプ、攻撃を防ぐ。",
+
+  "enchantment.overenchanted.reinforced_tip": "強化チップ",
+  "enchantment.overenchanted.reinforced_tip.desc": "硬い素材の破壊速度を向上させる。",
+
+  "enchantment.overenchanted.fleetfoot": "フリートフット",
+  "enchantment.overenchanted.fleetfoot.desc": "移動速度がレベルごとに+15%増加し、ノックバック耐性が-20%減少する。",
+
+  "enchantment.overenchanted.aqua_glide": "アクアグライド",
+  "enchantment.overenchanted.aqua_glide.desc": "泳ぐ速度を向上させ、ダメージを受けた際にイルカの効果を得る。",
+
+  "enchantment.overenchanted.aqua_miner": "アクアマイナー",
+  "enchantment.overenchanted.aqua_miner.desc": "水中にいる間、採掘速度を向上させる。",
+
+  "enchantment.overenchanted.high_step": "ハイステップ",
+  "enchantment.overenchanted.high_step.desc": "段差の踏破高さを増加させる。",
+
+  "enchantment.overenchanted.inefficiency_curse": "非効率の呪い",
+  "enchantment.overenchanted.inefficiency_curse.desc": "採掘効率を低下させる。",
+
+  "enchantment.overenchanted.faster_attack": "高速攻撃",
+  "enchantment.overenchanted.faster_attack.desc": "攻撃速度を向上させる。",
+
+  "enchantment.overenchanted.lifebinder": "ライフバインダー",
+  "enchantment.overenchanted.lifebinder.desc": "敵を攻撃すると、5ブロック以内のペットを回復させるチャンスがある。",
+
+  "enchantment.overenchanted.stun": "スタン",
+  "enchantment.overenchanted.stun.desc": "2ブロック以上の高さから落下中に攻撃すると、敵（ボスを除く）をスタンさせる。",
+
+  "enchantment.overenchanted.agony_curse": "苦痛の呪い",
+  "enchantment.overenchanted.agony_curse.desc": "装備時に激しい痛みを引き起こす。",
+
+  "enchantment.overenchanted.echo_sight": "エコーサイト",
+  "enchantment.overenchanted.echo_sight.desc": "隠れたターゲットを明らかにする。キー設定でアクティブ化を確認。",
+
+  "enchantment.overenchanted.lumberjack": "ランバージャック",
+  "enchantment.overenchanted.lumberjack.desc": "ランバージャックキーを押し続けると、一度に木全体を伐採できる。",
+
+  "enchantment.overenchanted.echo_slayer": "エコースレイヤー",
+  "enchantment.overenchanted.echo_slayer.desc": "ウォーデンへのダメージを増加させる。",
+
+  "enchantment.overenchanted.sonic_boom_protection": "ソニックブームプロテクション",
+  "enchantment.overenchanted.sonic_boom_protection.desc": "ウォーデンのソニックブーム攻撃からのダメージを軽減する。",
+
+  "enchantment.overenchanted.deepfoot": "ディープフット",
+  "enchantment.overenchanted.deepfoot.desc": "ウォーデンがプレイヤーを検出するのを防ぐ。",
+
+  "enchantment.overenchanted.combo": "コンボ",
+  "enchantment.overenchanted.combo.desc": "連続攻撃ごとにダメージが増加するが、空振りやブロックに当たるとリセットされる。",
+
+  "enchantment.overenchanted.withered_thorns": "ウィザードソーンズ",
+  "enchantment.overenchanted.withered_thorns.desc": "攻撃してきた敵にウィザー効果を付与する。",
+
+  "enchantment.overenchanted.fire_thorns": "ファイアソーンズ",
+  "enchantment.overenchanted.fire_thorns.desc": "攻撃してきた敵を炎上させる。",
+
+  "enchantment.overenchanted.poison_thorns": "ポイズンソーンズ",
+  "enchantment.overenchanted.poison_thorns.desc": "攻撃してきた敵に毒を与える。",
+
+  "enchantment.overenchanted.ice_thorns": "アイスソーンズ",
+  "enchantment.overenchanted.ice_thorns.desc": "攻撃してきた敵を凍らせて動きを遅くする。",
+
+  "enchantment.overenchanted.weak_thorns": "ウィークソーンズ",
+  "enchantment.overenchanted.weak_thorns.desc": "攻撃してきた敵に弱体化を付与する。",
+
+  "enchantment.overenchanted.slow_thorns": "スロウソーンズ",
+  "enchantment.overenchanted.slow_thorns.desc": "攻撃してきた敵に鈍足を付与する。",
+
+  "enchantment.overenchanted.ender_mind": "エンダーマインド",
+  "enchantment.overenchanted.ender_mind.desc": "エンダーマンがプレイヤーを敵対しないようにする。",
+
+  "enchantment.overenchanted.insecticide": "インセクティサイド",
+  "enchantment.overenchanted.insecticide.desc": "昆虫系の敵（シルバーフィッシュ、エンダーマイト、クモ）へのダメージが増加する。",
+
+  "enchantment.overenchanted.heavy_weight": "ヘビーウェイト",
+  "enchantment.overenchanted.heavy_weight.desc": "ノックバック距離が減少するが、攻撃時のノックバック力が増加する。",
+
+  "enchantment.overenchanted.withered_edge": "ウィザードエッジ",
+  "enchantment.overenchanted.withered_edge.desc": "敵にウィザー効果を付与する。",
+
+  "enchantment.overenchanted.sluggish_curse": "スラッギッシュの呪い",
+  "enchantment.overenchanted.sluggish_curse.desc": "移動速度が低下する。",
+
+  "enchantment.overenchanted.sticky_thorns": "スティッキーソーンズ",
+  "enchantment.overenchanted.sticky_thorns.desc": "攻撃してきた敵にスロー効果を与える。"
+}

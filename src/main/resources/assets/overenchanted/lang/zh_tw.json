@@ -64,5 +64,10 @@
   "enchantment.overenchanted.reflect": "反射",
   "enchantment.overenchanted.reflect.desc": "使用盾牌時，將被阻擋的箭矢反彈回攻擊者。",
   "enchantment.overenchanted.ricochet": "彈跳",
-  "enchantment.overenchanted.ricochet.desc": "箭矢在撞擊時會從牆壁上彈回。"
+  "enchantment.overenchanted.ricochet.desc": "箭矢在撞擊時會從牆壁上彈回。",
+  "enchantment.overenchanted.true_shot": "真實射擊",
+  "enchantment.overenchanted.true_shot.desc": "箭矢不受重力影響，但飛行距離比普通箭矢短。",
+  "enchantment.overenchanted.weightless": "無重力",
+  "enchantment.overenchanted.weightless.desc": "減少重力影響。"
+
 }

@@ -97,5 +97,11 @@
   "enchantment.overenchanted.reflect.desc": "Отражает заблокированные стрелы обратно в атакующего при использовании щита.",
 
   "enchantment.overenchanted.ricochet": "Рикошет",
-  "enchantment.overenchanted.ricochet.desc": "Стрелы отскакивают от стен при столкновении."
+  "enchantment.overenchanted.ricochet.desc": "Стрелы отскакивают от стен при столкновении.",
+
+  "enchantment.overenchanted.true_shot": "Истинный Выстрел",
+  "enchantment.overenchanted.true_shot.desc": "Стрелы не подвержены гравитации, но летят на меньшую дистанцию, чем обычные стрелы.",
+
+  "enchantment.overenchanted.weightless": "Невесомость",
+  "enchantment.overenchanted.weightless.desc": "Уменьшает влияние гравитации."
 }

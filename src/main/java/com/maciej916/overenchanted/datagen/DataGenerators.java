@@ -1,6 +1,7 @@
 package com.maciej916.overenchanted.datagen;
 
 import com.maciej916.overenchanted.Overenchanted;
+import com.maciej916.overenchanted.datagen.provider.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

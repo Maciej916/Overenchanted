@@ -1,4 +1,4 @@
-package com.maciej916.overenchanted.datagen;
+package com.maciej916.overenchanted.datagen.provider;
 
 import com.maciej916.overenchanted.tag.ModTags;
 import net.minecraft.core.HolderLookup;

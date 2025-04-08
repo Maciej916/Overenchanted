@@ -97,5 +97,11 @@
   "enchantment.overenchanted.reflect.desc": "Renvoie les flèches bloquées vers l'attaquant lorsqu'un bouclier est utilisé.",
 
   "enchantment.overenchanted.ricochet": "Rebond",
-  "enchantment.overenchanted.ricochet.desc": "Les flèches rebondissent sur les murs lors de l'impact."
+  "enchantment.overenchanted.ricochet.desc": "Les flèches rebondissent sur les murs lors de l'impact.",
+
+  "enchantment.overenchanted.true_shot": "Tir Véritable",
+  "enchantment.overenchanted.true_shot.desc": "Les flèches ne sont pas affectées par la gravité mais parcourent une distance plus courte que les flèches normales.",
+
+  "enchantment.overenchanted.weightless": "Légèreté",
+  "enchantment.overenchanted.weightless.desc": "Réduit l'effet de la gravité."
 }

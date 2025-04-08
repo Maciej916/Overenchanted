@@ -25,6 +25,7 @@ public class ModEnchantments {
     public static final ResourceKey<Enchantment> PARALYSIS = create("paralysis");
     public static final ResourceKey<Enchantment> QUICK_DRAW = create("quick_draw");
     public static final ResourceKey<Enchantment> RICOCHET = create("ricochet");
+    public static final ResourceKey<Enchantment> TRUE_SHOT = create("true_shot");
 
     public static final ResourceKey<Enchantment> ENRAGED = create("enraged");
     public static final ResourceKey<Enchantment> BLAZING_WALKER = create("blazing_walker");
@@ -36,6 +37,7 @@ public class ModEnchantments {
     public static final ResourceKey<Enchantment> SONIC_BOOM_PROTECTION = create("sonic_boom_protection");
     public static final ResourceKey<Enchantment> DEEPFOOT = create("deepfoot");
     public static final ResourceKey<Enchantment> MULTI_JUMP = create("multi_jump");
+    public static final ResourceKey<Enchantment> WEIGHTLESS = create("weightless");
 
     public static final ResourceKey<Enchantment> ETERNAL = create("eternal");
 
@@ -69,6 +71,7 @@ public class ModEnchantments {
         register(context, PARALYSIS, ParalysisEnchantment.builder(context));
 //        register(context, QUICK_DRAW, QuickDrawEnchantment.builder(context));
         register(context, RICOCHET, RicochetEnchantment.builder(context));
+        register(context, TRUE_SHOT, TrueShotEnchantment.builder(context));
 
         register(context, ENRAGED, EnragedEnchantment.builder(context));
         register(context, BLAZING_WALKER, BlazingWalkerEnchantment.builder(context));
@@ -80,6 +83,7 @@ public class ModEnchantments {
         register(context, SONIC_BOOM_PROTECTION, SonicBoomProtectionEnchantment.builder(context));
         register(context, DEEPFOOT, DeepfootEnchantment.builder(context));
         register(context, MULTI_JUMP, MultiJumpEnchantment.builder(context));
+        register(context, WEIGHTLESS, WeightlessEnchantment.builder(context));
 
         register(context, BREAKING_CURSE, BreakingEnchantment.builder(context));
         register(context, INEFFICIENCY_CURSE, InefficiencyEnchantment.builder(context));

@@ -22,10 +22,10 @@ public class HighStepEnchantment {
         return Enchantment.enchantment(
                         Enchantment.definition(
                                 items.getOrThrow(ItemTags.FOOT_ARMOR_ENCHANTABLE),
-                                EnchantmentRarity.UNCOMMON.weight(),
+                                EnchantmentRarity.COMMON.weight(),
                                 2,
-                                Enchantment.dynamicCost(1, 8),
-                                Enchantment.dynamicCost(20, 8),
+                                Enchantment.dynamicCost(5, 6),
+                                Enchantment.dynamicCost(11, 6),
                                 2,
                                 EquipmentSlotGroup.FEET
                         )

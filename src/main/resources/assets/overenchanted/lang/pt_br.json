@@ -1,0 +1,107 @@
+{
+  "painting.overenchanted.runes_colors.title": "Runas & Cores",
+  "painting.overenchanted.runes_colors.author": "Overenchanted",
+
+  "effect.overenchanted.stun": "Atordoamento",
+
+  "key.categories.overenchanted": "Overenchanted",
+  "key.overenchanted.echo_sight": "Usar Encantamento Visão do Eco",
+  "key.overenchanted.lumberjack": "Botão do Encantamento Lenhador",
+
+  "overenchanted.echo_sight_countdown": "Recarga da Visão do Eco: %s segundos",
+
+  "overenchanted.combo_lvl": "Combo: %s",
+
+  "enchantment.overenchanted.blazing_edge": "Lâmina Flamejante",
+  "enchantment.overenchanted.blazing_edge.desc": "Concede uma chance de incendiar inimigos próximos ao acertar.",
+
+  "enchantment.overenchanted.blazing_walker": "Andarilho Flamejante",
+  "enchantment.overenchanted.blazing_walker.desc": "Permite andar com segurança sobre lava.",
+
+  "enchantment.overenchanted.breaking_curse": "Maldição da Quebra",
+  "enchantment.overenchanted.breaking_curse.desc": "Faz com que o item quebre mais rápido com o uso.",
+
+  "enchantment.overenchanted.explosive_shot": "Tiro Explosivo",
+  "enchantment.overenchanted.explosive_shot.desc": "Cria uma pequena explosão ao atingir uma criatura.",
+
+  "enchantment.overenchanted.enraged": "Enfurecido",
+  "enchantment.overenchanted.enraged.desc": "Aumenta o dano de ataque em +30% e reduz a armadura em -20% por nível.",
+
+  "enchantment.overenchanted.eternal": "Eterno",
+  "enchantment.overenchanted.eternal.desc": "Impede que o item desapareça.",
+
+  "enchantment.overenchanted.floating": "Flutuação",
+  "enchantment.overenchanted.floating.desc": "Faz com que o inimigo flutue por um curto período de tempo.",
+
+  "enchantment.overenchanted.free_riding": "Montaria Livre",
+  "enchantment.overenchanted.free_riding.desc": "Impede o desgaste de durabilidade ao aumentar a velocidade em porco ou estrídeo.",
+
+  "enchantment.overenchanted.ignorance_curse": "Maldição da Ignorância",
+  "enchantment.overenchanted.ignorance_curse.desc": "Criaturas e blocos minerados não concedem experiência.",
+
+  "enchantment.overenchanted.paralysis": "Paralisia",
+  "enchantment.overenchanted.paralysis.desc": "Aplica paralisia a uma criatura, impedindo-a de se mover, pular ou atacar por um curto período.",
+
+  "enchantment.overenchanted.reinforced_tip": "Ponta Reforçada",
+  "enchantment.overenchanted.reinforced_tip.desc": "Aumenta a velocidade ao quebrar materiais mais duros.",
+
+  "enchantment.overenchanted.fleetfoot": "Pés Ligeiros",
+  "enchantment.overenchanted.fleetfoot.desc": "Aumenta a velocidade de movimento em +15% mas reduz a resistência a recuo em -20% por nível.",
+
+  "enchantment.overenchanted.aqua_glide": "Deslizamento Aquático",
+  "enchantment.overenchanted.aqua_glide.desc": "Aumenta a velocidade de nado e concede o efeito de golfinho ao ser ferido.",
+
+  "enchantment.overenchanted.aqua_miner": "Minerador Aquático",
+  "enchantment.overenchanted.aqua_miner.desc": "Aumenta a velocidade de mineração enquanto submerso.",
+
+  "enchantment.overenchanted.high_step": "Passo Alto",
+  "enchantment.overenchanted.high_step.desc": "Aumenta a altura do passo.",
+
+  "enchantment.overenchanted.inefficiency_curse": "Maldição da Ineficiência",
+  "enchantment.overenchanted.inefficiency_curse.desc": "Reduz a eficiência de mineração.",
+
+  "enchantment.overenchanted.faster_attack": "Ataque Rápido",
+  "enchantment.overenchanted.faster_attack.desc": "Aumenta a velocidade de ataque.",
+
+  "enchantment.overenchanted.lifebinder": "Vinculador de Vida",
+  "enchantment.overenchanted.lifebinder.desc": "Ao atacar um inimigo, há chance de curar seus animais de estimação num raio de 5 blocos.",
+
+  "enchantment.overenchanted.stun": "Atordoamento",
+  "enchantment.overenchanted.stun.desc": "Atacar ao cair de mais de 2 blocos atordoa o inimigo (exceto chefes).",
+
+  "enchantment.overenchanted.agony_curse": "Maldição da Agonia",
+  "enchantment.overenchanted.agony_curse.desc": "Inflige dor severa ao ser equipado.",
+
+  "enchantment.overenchanted.echo_sight": "Visão do Eco",
+  "enchantment.overenchanted.echo_sight.desc": "Revela alvos ocultos. Verifique os atalhos de teclado para ativar.",
+
+  "enchantment.overenchanted.lumberjack": "Lenhador",
+  "enchantment.overenchanted.lumberjack.desc": "Segure a tecla de Lenhador para derrubar árvores inteiras de uma vez.",
+
+  "enchantment.overenchanted.echo_slayer": "Caçador do Eco",
+  "enchantment.overenchanted.echo_slayer.desc": "Aumenta o dano causado ao Warden.",
+
+  "enchantment.overenchanted.sonic_boom_protection": "Proteção Contra Explosão Sônica",
+  "enchantment.overenchanted.sonic_boom_protection.desc": "Reduz o dano da explosão sônica do Warden.",
+
+  "enchantment.overenchanted.deepfoot": "Passos Profundos",
+  "enchantment.overenchanted.deepfoot.desc": "Impede o Warden de detectar o jogador.",
+
+  "enchantment.overenchanted.combo": "Combo",
+  "enchantment.overenchanted.combo.desc": "Aumenta o dano a cada golpe consecutivo, reiniciando ao errar ou atingir um bloco.",
+
+  "enchantment.overenchanted.multi_jump": "Pulo Múltiplo",
+  "enchantment.overenchanted.multi_jump.desc": "Permite realizar pulos adicionais no ar.",
+
+  "enchantment.overenchanted.reflect": "Reflexo",
+  "enchantment.overenchanted.reflect.desc": "Redireciona flechas bloqueadas de volta ao atacante ao usar escudo.",
+
+  "enchantment.overenchanted.ricochet": "Ricochete",
+  "enchantment.overenchanted.ricochet.desc": "Flechas ricocheteiam nas paredes ao impactar.",
+
+  "enchantment.overenchanted.true_shot": "Disparo Preciso",
+  "enchantment.overenchanted.true_shot.desc": "Flechas não são afetadas pela gravidade, mas percorrem menor distância.",
+
+  "enchantment.overenchanted.weightless": "Sem Peso",
+  "enchantment.overenchanted.weightless.desc": "Reduz o efeito da gravidade."
+}

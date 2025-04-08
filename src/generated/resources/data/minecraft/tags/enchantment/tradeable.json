@@ -28,6 +28,8 @@
     "overenchanted:combo",
     "overenchanted:multi_jump",
     "overenchanted:reflect",
-    "overenchanted:ricochet"
+    "overenchanted:ricochet",
+    "overenchanted:true_shot",
+    "overenchanted:weightless"
   ]
 }

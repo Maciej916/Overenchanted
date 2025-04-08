@@ -97,5 +97,11 @@
   "enchantment.overenchanted.reflect.desc": "Redirige las flechas bloqueadas de vuelta al atacante al usar un escudo.",
 
   "enchantment.overenchanted.ricochet": "Ricochét",
-  "enchantment.overenchanted.ricochet.desc": "Las flechas rebotan en las paredes al impactar."
+  "enchantment.overenchanted.ricochet.desc": "Las flechas rebotan en las paredes al impactar.",
+
+  "enchantment.overenchanted.true_shot": "Disparo Verdadero",
+  "enchantment.overenchanted.true_shot.desc": "Las flechas no se ven afectadas por la gravedad pero recorren una distancia menor que las normales.",
+
+  "enchantment.overenchanted.weightless": "Sin Peso",
+  "enchantment.overenchanted.weightless.desc": "Reduce el efecto de la gravedad."
 }

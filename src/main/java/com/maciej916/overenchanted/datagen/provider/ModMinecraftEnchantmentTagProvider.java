@@ -1,4 +1,4 @@
-package com.maciej916.overenchanted.datagen;
+package com.maciej916.overenchanted.datagen.provider;
 
 import com.maciej916.overenchanted.enchantment.ModEnchantments;
 import net.minecraft.core.HolderLookup;
@@ -34,6 +34,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.MULTI_JUMP)
                 .add(ModEnchantments.REFLECT)
                 .add(ModEnchantments.RICOCHET)
+                .add(ModEnchantments.TRUE_SHOT)
+                .add(ModEnchantments.WEIGHTLESS)
         ;
 
         tag(EnchantmentTags.CURSE)
@@ -54,6 +56,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.SONIC_BOOM_PROTECTION)
                 .add(ModEnchantments.REFLECT)
                 .add(ModEnchantments.RICOCHET)
+                .add(ModEnchantments.TRUE_SHOT)
+                .add(ModEnchantments.WEIGHTLESS)
         ;
 
         tag(EnchantmentTags.ON_RANDOM_LOOT)
@@ -70,6 +74,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.LUMBERJACK)
                 .add(ModEnchantments.REFLECT)
                 .add(ModEnchantments.RICOCHET)
+                .add(ModEnchantments.TRUE_SHOT)
+                .add(ModEnchantments.WEIGHTLESS)
         ;
 
         tag(EnchantmentTags.TRADEABLE)
@@ -102,6 +108,8 @@ public class ModMinecraftEnchantmentTagProvider extends EnchantmentTagsProvider 
                 .add(ModEnchantments.MULTI_JUMP)
                 .add(ModEnchantments.REFLECT)
                 .add(ModEnchantments.RICOCHET)
+                .add(ModEnchantments.TRUE_SHOT)
+                .add(ModEnchantments.WEIGHTLESS)
         ;
 
         tag(EnchantmentTags.TREASURE)

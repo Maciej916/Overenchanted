@@ -97,5 +97,11 @@
   "enchantment.overenchanted.reflect.desc": "Kieruje zablokowane strzały z powrotem do atakującego, gdy używasz tarczy.",
 
   "enchantment.overenchanted.ricochet": "Rykoszet",
-  "enchantment.overenchanted.ricochet.desc": "Strzały odbijają się od ścian po uderzeniu."
+  "enchantment.overenchanted.ricochet.desc": "Strzały odbijają się od ścian po uderzeniu.",
+
+  "enchantment.overenchanted.true_shot": "Prawdziwy Strzał",
+  "enchantment.overenchanted.true_shot.desc": "Strzały nie są podatne na grawitację, ale mają krótszy zasięg niż zwykłe strzały.",
+
+  "enchantment.overenchanted.weightless": "Bezwładność",
+  "enchantment.overenchanted.weightless.desc": "Zmniejsza wpływ grawitacji."
 }

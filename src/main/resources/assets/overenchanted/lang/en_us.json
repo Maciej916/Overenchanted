@@ -97,5 +97,11 @@
   "enchantment.overenchanted.reflect.desc": "Redirects blocked arrows back to the attacker when using a shield.",
 
   "enchantment.overenchanted.ricochet": "Ricochet",
-  "enchantment.overenchanted.ricochet.desc": "Arrows bounce off walls upon impact."
+  "enchantment.overenchanted.ricochet.desc": "Arrows bounce off walls upon impact.",
+
+  "enchantment.overenchanted.true_shot": "True Shot",
+  "enchantment.overenchanted.true_shot.desc": "Arrows are unaffected by gravity but travel a shorter distance than regular arrows.",
+
+  "enchantment.overenchanted.weightless": "Weightless",
+  "enchantment.overenchanted.weightless.desc": "Reduces the effect of gravity."
 }

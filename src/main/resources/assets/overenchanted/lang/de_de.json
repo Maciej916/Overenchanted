@@ -97,5 +97,12 @@
   "enchantment.overenchanted.reflect.desc": "Lenkt blockierte Pfeile zurück zum Angreifer, wenn ein Schild verwendet wird.",
 
   "enchantment.overenchanted.ricochet": "Abprall",
-  "enchantment.overenchanted.ricochet.desc": "Pfeile prallen nach dem Aufprall von Wänden ab."
+  "enchantment.overenchanted.ricochet.desc": "Pfeile prallen nach dem Aufprall von Wänden ab.",
+
+  "enchantment.overenchanted.true_shot": "Wahrer Schuss",
+  "enchantment.overenchanted.true_shot.desc": "Pfeile werden nicht von der Schwerkraft beeinflusst, fliegen aber kürzer als normale Pfeile.",
+
+  "enchantment.overenchanted.weightless": "Schwerelos",
+  "enchantment.overenchanted.weightless.desc": "Verringert den Einfluss der Schwerkraft."
+
 }
