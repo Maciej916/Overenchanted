@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.forgecdn.net/attachments/description/1218733/description_e9bce1e8-422a-480d-b8f1-8db36ab12935.png">
+  <img src="https://media.forgecdn.net/attachments/description/1218733/description_63537aa0-c828-4666-8a35-1eea04cef5a7.png">
 </div>
 
 # Overenchanted [![](http://cf.way2muchnoise.eu/1218733.svg) ![](http://cf.way2muchnoise.eu/versions/1218733.svg)](https://curseforge.com/minecraft/mc-mods/overenchanted)
