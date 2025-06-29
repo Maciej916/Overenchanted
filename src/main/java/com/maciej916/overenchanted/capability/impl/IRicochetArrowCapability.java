@@ -1,10 +1,9 @@
 package com.maciej916.overenchanted.capability.impl;
 
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.common.util.INBTSerializable;
+import net.neoforged.neoforge.common.util.ValueIOSerializable;
 
-public interface IRicochetArrowCapability extends INBTSerializable<CompoundTag> {
+public interface IRicochetArrowCapability extends ValueIOSerializable {
 
     void setEntityId(int entityId);
 

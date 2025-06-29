@@ -1,14 +1,13 @@
 package com.maciej916.overenchanted.capability.impl;
 
-import net.minecraft.core.HolderLookup;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.projectile.Arrow;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.ValueOutput;
 import net.neoforged.neoforge.capabilities.ICapabilityProvider;
-import net.neoforged.neoforge.common.util.INBTSerializable;
+import net.neoforged.neoforge.common.util.ValueIOSerializable;
 import org.jetbrains.annotations.Nullable;
-import org.jetbrains.annotations.UnknownNullability;
 
-public class RicochetArrowCapabilityProvider implements ICapabilityProvider<Arrow, Void, IRicochetArrowCapability>, INBTSerializable<CompoundTag> {
+public class RicochetArrowCapabilityProvider implements ICapabilityProvider<Arrow, Void, IRicochetArrowCapability>, ValueIOSerializable {
     private IRicochetArrowCapability capability = null;
 
     private IRicochetArrowCapability getOrCreatePlayerCapability() {
@@ -24,15 +23,13 @@ public class RicochetArrowCapabilityProvider implements ICapabilityProvider<Arro
         return getOrCreatePlayerCapability();
     }
 
-
     @Override
-    public @UnknownNullability CompoundTag serializeNBT(HolderLookup.Provider provider) {
-        return getOrCreatePlayerCapability().serializeNBT(provider);
+    public void serialize(ValueOutput valueOutput) {
+        getOrCreatePlayerCapability().serialize(valueOutput);
     }
 
-
     @Override
-    public void deserializeNBT(HolderLookup.Provider provider, CompoundTag compoundTag) {
-        getOrCreatePlayerCapability().deserializeNBT(provider, compoundTag);
+    public void deserialize(ValueInput valueInput) {
+        getOrCreatePlayerCapability().deserialize(valueInput);
     }
 }

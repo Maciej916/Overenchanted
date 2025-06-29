@@ -12,7 +12,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = Overenchanted.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = Overenchanted.MOD_ID)
 public class DataGenerators {
 
     @SubscribeEvent
@@ -36,10 +36,8 @@ public class DataGenerators {
         generator.addProvider(true, new ModMinecraftEnchantmentTagProvider(packOutput, lookupProvider));
         generator.addProvider(true, new ModMinecraftPaintingVariantTagsProvider(packOutput, lookupProvider));
 
-        BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider);
-
-        generator.addProvider(true, blockTagsProvider);
-        generator.addProvider(true, new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter()));
+        generator.addProvider(true, new ModBlockTagProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new ModItemTagProvider(packOutput, lookupProvider));
 
 //        generator.addProvider(true, new ModGlobalLootModifierProvider(packOutput, lookupProvider));
 //        generator.addProvider(true,

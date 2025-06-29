@@ -10,7 +10,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.capabilities.EntityCapability;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 
-@EventBusSubscriber(modid = Overenchanted.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = Overenchanted.MOD_ID)
 public class ModCapabilities {
 
     public static final EntityCapability<IRicochetArrowCapability,Void> RICOCHET_ARROW = EntityCapability.createVoid(ResourceLocation.fromNamespaceAndPath(Overenchanted.MOD_ID, "ricochet_arrow"), IRicochetArrowCapability.class);

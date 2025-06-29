@@ -1,8 +1,7 @@
 package com.maciej916.overenchanted.data.impl;
 
-import net.minecraft.core.HolderLookup;
-import net.minecraft.nbt.CompoundTag;
-import org.jetbrains.annotations.UnknownNullability;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.ValueOutput;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -69,17 +68,12 @@ public class PlayerDataAttachment implements IPlayerDataAttachment {
     }
 
     @Override
-    public @UnknownNullability CompoundTag serializeNBT(HolderLookup.Provider provider) {
-        CompoundTag tag = new CompoundTag();
-
-        tag.putInt("revealCountdown", revealCountdown);
-
-        return tag;
+    public void serialize(ValueOutput valueOutput) {
+        valueOutput.putInt("revealCountdown", revealCountdown);
     }
 
-
     @Override
-    public void deserializeNBT(HolderLookup.Provider provider, CompoundTag compoundTag) {
-        revealCountdown = compoundTag.getIntOr("revealCountdown", 0);
+    public void deserialize(ValueInput valueInput) {
+        revealCountdown = valueInput.getIntOr("revealCountdown", 0);
     }
 }

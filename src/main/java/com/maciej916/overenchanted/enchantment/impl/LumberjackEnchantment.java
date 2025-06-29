@@ -29,7 +29,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
-@EventBusSubscriber(modid = Overenchanted.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
+@EventBusSubscriber(modid = Overenchanted.MOD_ID)
 public class LumberjackEnchantment {
     private static final int MAX_TREE_SIZE = 512;
 

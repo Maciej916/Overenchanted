@@ -26,7 +26,7 @@ import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.event.entity.ProjectileImpactEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
 
-@EventBusSubscriber(modid = Overenchanted.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
+@EventBusSubscriber(modid = Overenchanted.MOD_ID)
 public class RicochetEnchantment {
     private static final double SPEED_DAMPENING = 0.7; // Reduce speed after each bounce
     private static final double ANGLE_VARIATION = 0.1; // Add small angle variation

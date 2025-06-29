@@ -1,9 +1,8 @@
 package com.maciej916.overenchanted.capability.impl;
 
-import net.minecraft.core.HolderLookup;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.phys.Vec3;
-import org.jetbrains.annotations.UnknownNullability;
 
 public class RicochetArrowCapability implements IRicochetArrowCapability {
     private int entityId;
@@ -49,28 +48,23 @@ public class RicochetArrowCapability implements IRicochetArrowCapability {
     }
 
     @Override
-    public @UnknownNullability CompoundTag serializeNBT(HolderLookup.Provider provider) {
-        CompoundTag tag = new CompoundTag();
-
-        tag.putInt("entityId", entityId);
-        tag.putInt("bouncesLeft", bouncesLeft);
-        tag.putDouble("motionX", motion.x);
-        tag.putDouble("motionY", motion.y);
-        tag.putDouble("motionZ", motion.z);
-        tag.putFloat("yRot", yRot);
-        tag.putFloat("xRot", xRot);
-
-        return tag;
+    public void serialize(ValueOutput valueOutput) {
+        valueOutput.putInt("entityId", entityId);
+        valueOutput.putInt("bouncesLeft", bouncesLeft);
+        valueOutput.putDouble("motionX", motion.x);
+        valueOutput.putDouble("motionY", motion.y);
+        valueOutput.putDouble("motionZ", motion.z);
+        valueOutput.putFloat("yRot", yRot);
+        valueOutput.putFloat("xRot", xRot);
     }
 
-
     @Override
-    public void deserializeNBT(HolderLookup.Provider provider, CompoundTag compoundTag) {
-        entityId = compoundTag.getIntOr("entityId", 0);
-        bouncesLeft = compoundTag.getIntOr("bouncesLeft", 0);
-        motion = new Vec3(compoundTag.getDoubleOr("motionX", 0), compoundTag.getDoubleOr("motionY", 0), compoundTag.getDoubleOr("motionZ", 0));
-        yRot = compoundTag.getFloatOr("yRot", 0);
-        xRot = compoundTag.getFloatOr("xRot", 0);
+    public void deserialize(ValueInput valueInput) {
+        entityId = valueInput.getIntOr("entityId", 0);
+        bouncesLeft = valueInput.getIntOr("bouncesLeft", 0);
+        motion = new Vec3(valueInput.getDoubleOr("motionX", 0), valueInput.getDoubleOr("motionY", 0), valueInput.getDoubleOr("motionZ", 0));
+        yRot = valueInput.getFloatOr("yRot", 0);
+        xRot = valueInput.getFloatOr("xRot", 0);
     }
 
     @Override

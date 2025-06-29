@@ -23,7 +23,7 @@ import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.WeakHashMap;
 
-@EventBusSubscriber(modid = Overenchanted.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
+@EventBusSubscriber(modid = Overenchanted.MOD_ID)
 public class TrueShotEnchantment {
     private static final double MIN_SPEED_FOR_GRAVITY = 0.05;
     private static final WeakHashMap<AbstractArrow, Integer> trueShotArrows = new WeakHashMap<>();

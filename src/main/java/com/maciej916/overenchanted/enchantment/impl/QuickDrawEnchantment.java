@@ -1,12 +1,9 @@
 package com.maciej916.overenchanted.enchantment.impl;
 
 import com.maciej916.overenchanted.Overenchanted;
-import com.maciej916.overenchanted.enchantment.ModEnchantments;
-import com.maciej916.overenchanted.util.EnchantmentUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -15,7 +12,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 
-@EventBusSubscriber(modid = Overenchanted.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
+@EventBusSubscriber(modid = Overenchanted.MOD_ID)
 public class QuickDrawEnchantment {
 
     @SubscribeEvent
